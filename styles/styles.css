@@ -9,9 +9,21 @@ h1 {
     color: #121212;
 }
 
-p {
+.teamworkers {
     font-size: 20px;
     line-height: 27px;
     color: black; /* пока такой цвет после добавления картинки изменить */
 }
 
+h2 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #121212;
+}
+
+.ourstudio {
+    font-size: 45px;
+    line-height: 61px;
+    color: #121212;
+    
+}
