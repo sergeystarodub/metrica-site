@@ -16,7 +16,8 @@ h1 {
 .teamworkers {
     font-size: 20px;
     line-height: 27px;
-    color: #FFFFFF; 
+    color: #FFFFFF;
+    letter-spacing: -0.03em; 
 }
 
 h2 {
