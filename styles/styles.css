@@ -7,10 +7,16 @@ body {
     font-weight: 400;
 }
 
-h1 {
+.title-interiors {
+    width: 956px;
+    height: 120px;
+}
+
+.title-interiors h1 {
     font-size: 60px;
     line-height: 60px;
     color: #121212;
+    letter-spacing: -0.03em;
 }
 
 .teamworkers {
