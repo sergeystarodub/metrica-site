@@ -38,8 +38,7 @@ h2 {
     background-image: url('../resources/interior-photo.png');
     background-size: contain;
     background-repeat: no-repeat;
-    /* padding-left: 40px;
-    padding-top: 379px; */ 
+     
     position: relative;
 }
 
