@@ -38,8 +38,9 @@ h2 {
     background-image: url('../resources/interior-photo.png');
     background-size: contain;
     background-repeat: no-repeat;
-    padding-left: 40px;
-    padding-top: 379px; /* cсделал пока так потом поискать в инете про свойство из видео Практика */
+    /* padding-left: 40px;
+    padding-top: 379px; */ 
+    position: relative;
 }
 
 .image-text-teamworkers {
@@ -50,5 +51,9 @@ h2 {
     line-height: 27px;
     color: #FFFFFF;
     letter-spacing: -0.03em;
+
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
     
 }
