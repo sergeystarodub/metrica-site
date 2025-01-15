@@ -30,8 +30,11 @@ body {
 }
 
 .ourstudio {
+    width: 1048px;
+    height: 366px;
     font-size: 45px;
     line-height: 61px;
+    letter-spacing: -0.03em;
     color: #121212;
     
 }
