@@ -16,6 +16,7 @@ body {
     line-height: 60px;
     color: #121212;
     letter-spacing: -0.03em;
+    margin-bottom: 30px;
 }
 
 
@@ -27,6 +28,7 @@ body {
     height: 25px;
     text-transform: uppercase;
     color: #121212;
+    margin-bottom: 30px;
 }
 
 .ourstudio {
@@ -36,6 +38,7 @@ body {
     line-height: 61px;
     letter-spacing: -0.03em;
     color: #121212;
+    margin-bottom: 30px;
     
 }
 
@@ -47,6 +50,7 @@ body {
     background-repeat: no-repeat;
      
     position: relative;
+    margin-bottom: 150px;
 }
 
 .image-text-teamworkers {
