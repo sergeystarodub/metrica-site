@@ -19,9 +19,13 @@ body {
 }
 
 
-h2 {
+.about {
     font-size: 18px;
     line-height: 25px;
+    letter-spacing: -0.03em;
+    width: 51px;
+    height: 25px;
+    text-transform: uppercase;
     color: #121212;
 }
 
