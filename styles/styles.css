@@ -39,7 +39,8 @@ body {
     letter-spacing: -0.03em;
     color: #121212;
     margin-bottom: 30px;
-    
+
+       
 }
 
 .image-text {
@@ -89,3 +90,8 @@ body {
     width: 1150px;
     margin: 0 auto;
 }
+
+.indent {   /* этим классом создал для <p class="ourstudio"> родителя <div class="indent"> относительно которого задал отступ padding-left: 3px и тем самым оставил корректный размер у <p class="ourstudio"> не изменяя его падингом*/
+    padding-left: 3px;
+}
+
