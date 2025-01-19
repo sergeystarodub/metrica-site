@@ -1,97 +1,90 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Manrope", sans-serif;
-    font-weight: 400;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
 }
-
 
 .title-interiors {
-    width: 956px;
-    height: 120px;
-    
-    font-size: 60px;
-    line-height: 60px;
-    color: #121212;
-    letter-spacing: -0.03em;
-    margin-bottom: 30px;
+  width: 956px;
+  height: 120px;
+
+  font-size: 60px;
+  line-height: 60px;
+  color: #121212;
+  letter-spacing: -0.03em;
+  margin-bottom: 30px;
 }
 
-
 .about {
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: -0.03em;
-    width: 51px;
-    height: 25px;
-    text-transform: uppercase;
-    color: #121212;
-    margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+  width: 51px;
+  height: 25px;
+  text-transform: uppercase;
+  color: #121212;
+  margin-bottom: 30px;
 }
 
 .ourstudio {
-    width: 1048px;
-    height: 366px;
-    font-size: 45px;
-    line-height: 61px;
-    letter-spacing: -0.03em;
-    color: #121212;
-    margin-bottom: 30px;
-
-       
+  width: 1048px;
+  height: 366px;
+  font-size: 45px;
+  line-height: 61px;
+  letter-spacing: -0.03em;
+  color: #121212;
+  margin-bottom: 30px;
 }
 
 .image-text {
-    width: 1150px;
-    height: 500px;
-    background-image: url('../resources/interior-photo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-     
-    position: relative;
-    margin-bottom: 150px;
+  width: 1150px;
+  height: 500px;
+  background-image: url("../resources/interior-photo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: relative;
+  margin-bottom: 150px;
 }
 
 .image-text-teamworkers {
-    width: 430px;
-    height: 81px;
+  width: 430px;
+  height: 81px;
 
-    font-size: 20px;
-    line-height: 27px;
-    color: #FFFFFF;
-    letter-spacing: -0.03em;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+  letter-spacing: -0.03em;
 
-    position: absolute;
-    left: 40px;
-    bottom: 40px;
-    
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
 }
 
 .services-btn {
-    display: block;
-    width: 255px;
-    height: 67px;
-    background-color: #ad1818;
-    color:  #ffffff;
-    text-decoration: none;
-    text-align: center;
-    line-height: 67px;
-    font-size: 20px;
-    letter-spacing: -0.03em;
-    cursor: pointer;
-    border-radius: 5px;
-    
-
+  display: block;
+  width: 255px;
+  height: 67px;
+  background-color: #ad1818;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 67px;
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .container {
-    width: 1150px;
-    margin: 0 auto;
+  width: 1150px;
+  margin: 0 auto;
 }
 
-.indent {   /* этим классом создал для <p class="ourstudio"> родителя <div class="indent"> относительно которого задал отступ padding-left: 3px и тем самым оставил корректный размер у <p class="ourstudio"> не изменяя его падингом*/
-    padding-left: 3px;
+.indent {
+  /* этим классом создал для <p class="ourstudio"> родителя <div class="indent"> относительно которого задал отступ padding-left: 3px и тем самым оставил корректный размер у <p class="ourstudio"> не изменяя его падингом*/
+  padding-left: 3px;
 }
-
