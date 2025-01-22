@@ -10,70 +10,66 @@ body {
 .title-interiors {
   width: 956px;
   height: 120px;
-
+  margin-bottom: 30px;
+  color: #121212;
   font-size: 60px;
   line-height: 60px;
-  color: #121212;
   letter-spacing: -0.03em;
-  margin-bottom: 30px;
 }
 
 .about {
+  width: 51px;
+  height: 25px;
+  margin-bottom: 30px;
+  color: #121212;
   font-size: 18px;
   line-height: 25px;
   letter-spacing: -0.03em;
-  width: 51px;
-  height: 25px;
   text-transform: uppercase;
-  color: #121212;
-  margin-bottom: 30px;
 }
 
 .ourstudio {
   width: 1048px;
   height: 366px;
+  margin-bottom: 30px;
+  color: #121212;
   font-size: 45px;
   line-height: 61px;
   letter-spacing: -0.03em;
-  color: #121212;
-  margin-bottom: 30px;
 }
 
 .image-text {
+  position: relative;
   width: 1150px;
   height: 500px;
+  margin-bottom: 150px;
   background-image: url("../resources/interior-photo.png");
   background-size: contain;
   background-repeat: no-repeat;
-
-  position: relative;
-  margin-bottom: 150px;
 }
 
 .image-text-teamworkers {
-  width: 430px;
-  height: 81px;
-
-  font-size: 20px;
-  line-height: 27px;
-  color: #ffffff;
-  letter-spacing: -0.03em;
-
   position: absolute;
   left: 40px;
   bottom: 40px;
+  width: 430px;
+  height: 81px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: -0.03em;
 }
 
 .services-btn {
-  display: block;
   width: 255px;
   height: 67px;
+  display: block;
   background-color: #ad1818;
   color: #ffffff;
   text-decoration: none;
   text-align: center;
-  line-height: 67px;
   font-size: 20px;
+  line-height: 67px;
   letter-spacing: -0.03em;
   cursor: pointer;
   border-radius: 5px;
