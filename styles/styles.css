@@ -31,7 +31,6 @@ body {
 .ourstudio {
   width: 1048px;
   height: 366px;
-  margin-bottom: 30px;
   color: #121212;
   font-size: 45px;
   line-height: 61px;
@@ -83,4 +82,5 @@ body {
 .indent {
   /* этим классом создал для <p class="ourstudio"> родителя <div class="indent"> относительно которого задал отступ padding-left: 3px и тем самым оставил корректный размер у <p class="ourstudio"> не изменяя его падингом*/
   padding-left: 3px;
+  margin-bottom: 30px;
 }
