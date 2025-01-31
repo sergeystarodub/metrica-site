@@ -28,7 +28,7 @@ body {
   text-transform: uppercase;
 }
 
-.ourstudio {
+.description {
   width: 1048px;
   height: 366px;
   color: #121212;
@@ -37,7 +37,7 @@ body {
   letter-spacing: -0.03em;
 }
 
-.image-text {
+.interior {
   position: relative;
   width: 1150px;
   height: 500px;
@@ -47,7 +47,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.image-text-teamworkers {
+.image-text {
   position: absolute;
   left: 40px;
   bottom: 40px;
