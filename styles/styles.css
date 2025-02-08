@@ -12,7 +12,6 @@ body {
 
 .title-interiors {
   width: 956px;
-  height: 120px;
   margin-bottom: 30px;
   color: #121212;
   font-size: 60px;
@@ -21,7 +20,6 @@ body {
 
 .about {
   width: 51px;
-  height: 25px;
   margin-bottom: 30px;
   color: #121212;
   font-size: 18px;
@@ -30,7 +28,6 @@ body {
 
 .description {
   width: 1048px;
-  height: 366px;
   color: #121212;
   font-size: 45px;
   line-height: 61px;
@@ -51,7 +48,6 @@ body {
   left: 40px;
   bottom: 40px;
   width: 430px;
-  height: 81px;
   color: #ffffff;
   font-size: 20px;
   line-height: 27px;
