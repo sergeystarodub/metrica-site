@@ -39,7 +39,8 @@ body {
   height: 500px;
   margin-bottom: 150px;
   background-image: url("../resources/interior-photo.png");
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
