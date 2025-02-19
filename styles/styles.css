@@ -10,7 +10,11 @@ body {
   background: #ffffff;
 }
 
-.title-interiors {
+.hero {
+  margin-bottom: 150px;
+}
+
+.hero__title {
   width: 956px;
   margin-bottom: 30px;
   color: #121212;
@@ -18,7 +22,7 @@ body {
   line-height: 60px;
 }
 
-.about {
+.about__title {
   width: 51px;
   margin-bottom: 30px;
   color: #121212;
@@ -26,25 +30,24 @@ body {
   line-height: 25px;
 }
 
-.description {
+.about__desc {
   width: 1048px;
   color: #121212;
   font-size: 45px;
   line-height: 61px;
 }
 
-.interior {
+.hero__block {
   position: relative;
   width: 1150px;
   height: 500px;
-  margin-bottom: 150px;
   background-image: url("../resources/interior-photo.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.image-text {
+.hero__desc {
   position: absolute;
   left: 40px;
   bottom: 40px;
@@ -54,7 +57,7 @@ body {
   line-height: 27px;
 }
 
-/* .services-btn {
+/* .about__btn {
   width: 255px;
   height: 67px;
   display: block;
@@ -68,7 +71,7 @@ body {
   border-radius: 5px;
 } */
 
-.services-btn {
+.about__btn {
   padding: 20px 40px;
   /* добавил width я так как не хватало внутренней ширины текста 175px было 173.938 */
   width: 255px;
@@ -89,7 +92,7 @@ body {
   max-width: 1180px;
 }
 
-.indent {
+.about__indent {
   /* этим классом создал для <p class="description"> родителя <div class="indent"> относительно которого задал отступ padding-left: 3px и тем самым оставил корректный размер у <p class="description"> не изменяя его падингом*/
   padding-left: 3px;
   margin-bottom: 30px;
