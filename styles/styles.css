@@ -7,7 +7,7 @@ body {
   font-family: "Manrope", sans-serif;
   width: 100%;
   font-weight: 400;
-  background: #f5f5f5;
+  background: #ffffff;
 }
 
 .title-interiors {
@@ -87,7 +87,6 @@ body {
   padding: 0 15px;
   margin: 0 auto;
   max-width: 1180px;
-  background: #ffffff;
 }
 
 .indent {
