@@ -92,8 +92,45 @@ body {
   max-width: 1180px;
 }
 
-.about__indent {
+.about__indent-wrapper {
   /* этим классом создал для <p class="description"> родителя <div class="indent"> относительно которого задал отступ padding-left: 3px и тем самым оставил корректный размер у <p class="description"> не изменяя его падингом*/
   padding-left: 3px;
   margin-bottom: 30px;
+}
+
+.about {
+  margin-bottom: 150px;
+}
+
+.projects__title {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #121212;
+}
+
+.project-item__image {
+  margin-bottom: 15px;
+  display: block;
+  width: 100%;
+  height: 450px;
+}
+
+.project-item__desc {
+  margin-bottom: 15px;
+  font-size: 30px;
+  line-height: 41px;
+  color: #121212;
+}
+
+.project-item__link {
+  width: 127px;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 27px;
+  text-decoration: none;
+  color: #ad1818;
+  
+
 }
