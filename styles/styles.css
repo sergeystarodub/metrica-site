@@ -135,6 +135,41 @@ body {
   line-height: 27px;
   text-decoration: none;
   color: #ad1818;
-  
+}
 
+.projects__btn {
+  width: 100%;
+  padding: 56px 0px 56px 0px;
+  display: block;
+  border: 1px solid #ad1818;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 41px;
+  letter-spacing: -0.03em;
+  color: #AD1818;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+/* второй вариант реализации кнопки с помощью line-height: 153px */
+/* .projects__btn {
+  width: 100%;
+  display: block;
+  border: 1px solid #ad1818;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 153px;
+  letter-spacing: -0.03em;
+  color: #AD1818;
+  text-decoration: none;
+  cursor: pointer;
+
+} */
+
+.projects__btn:hover {
+  background-color: #AD1818;
+  color: #FFFFFF;
 }
