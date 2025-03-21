@@ -147,10 +147,9 @@ body {
   font-size: 30px;
   line-height: 41px;
   letter-spacing: -0.03em;
-  color: #AD1818;
+  color: #ad1818;
   text-decoration: none;
   cursor: pointer;
-
 }
 
 /* второй вариант реализации кнопки с помощью line-height: 153px */
@@ -170,6 +169,24 @@ body {
 } */
 
 .projects__btn:hover {
-  background-color: #AD1818;
-  color: #FFFFFF;
+  background-color: #ad1818;
+  color: #ffffff;
+}
+
+.projects {
+  margin-bottom: 150px;
+}
+
+.services {
+  width: 100%; /* надо ли или нет ? */
+  padding: 151px 0px 150px;
+  background-color: #121212;
+}
+
+.services__title {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
