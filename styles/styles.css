@@ -183,10 +183,39 @@ body {
   background-color: #121212;
 }
 
+.service-item {
+  margin-bottom: 60px;
+}
+
+.service-item:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
 .services__title {
+  margin-bottom: 34px;
   font-size: 18px;
   line-height: 25px;
-  letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.service-item__image {
+  margin-bottom: 15px;
+  display: block;
+  width: 100%;
+  height: 270px;
+}
+
+.service-item__desc {
+  font-size: 30px;
+  line-height: 41px;
+  color: #ffffff;
+  /* не стал указывать-ширина здесь не критична */
+  /* width: 541px; */
+  /* можно было указать здесь если не указывать width: 541px*/
+  /* padding-left: 3px; */
+}
+
+.service-item__indent-wrapper {
+  padding-left: 3px;
 }
