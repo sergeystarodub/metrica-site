@@ -137,7 +137,8 @@ body {
   color: #ad1818;
 }
 
-.projects__btn {
+/* первый вариант реализации кнопки */
+/* .projects__btn {
   width: 100%;
   padding: 56px 0px 56px 0px;
   display: block;
@@ -150,11 +151,12 @@ body {
   color: #ad1818;
   text-decoration: none;
   cursor: pointer;
-}
+} */
 
 /* второй вариант реализации кнопки с помощью line-height: 153px */
-/* .projects__btn {
+.projects__btn {
   width: 100%;
+  height: 153px;
   display: block;
   border: 1px solid #ad1818;
   border-radius: 5px;
@@ -166,7 +168,7 @@ body {
   text-decoration: none;
   cursor: pointer;
 
-} */
+}
 
 .projects__btn:hover {
   background-color: #ad1818;
