@@ -106,6 +106,14 @@ body {
   margin-bottom: 90px;
 }
 
+.project-item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.projects-enumeration {
+  margin-bottom: 90px;
+}
+
 .projects__title {
   margin-bottom: 30px;
   font-size: 18px;
