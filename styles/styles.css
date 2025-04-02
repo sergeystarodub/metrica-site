@@ -110,6 +110,11 @@ body {
   margin-bottom: 0;
 }
 
+/* еще один вариант обнуления отступа у последнего элемента в ul - есть пробел между : */
+/* .projects-enumeration :nth-last-child(1) {
+  margin-bottom: 0;
+} */
+
 .projects-enumeration {
   margin-bottom: 90px;
 }
@@ -172,10 +177,9 @@ body {
   font-size: 30px;
   line-height: 153px;
   letter-spacing: -0.03em;
-  color: #AD1818;
+  color: #ad1818;
   text-decoration: none;
   cursor: pointer;
-
 }
 
 .projects__btn:hover {
@@ -189,7 +193,7 @@ body {
 
 .services {
   width: 100%; /* надо ли или нет ? */
-  padding: 151px 0px 150px;
+  padding: 151px 0 150px;
   background-color: #121212;
 }
 
@@ -198,8 +202,13 @@ body {
 }
 
 .service-item:nth-last-child(1) {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
+
+/* еще один вариант обнуления отступа у последнего элемента в ul - есть пробел между :  */
+/* .service-list :nth-last-child(1) {
+  margin-bottom: 0;
+} */
 
 .services__title {
   margin-bottom: 34px;
