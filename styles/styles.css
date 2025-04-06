@@ -192,9 +192,9 @@ body {
 }
 
 .services {
-  width: 100%; /* надо ли или нет ? */
   padding: 151px 0 150px;
   background-color: #121212;
+  color: #ffffff;
 }
 
 .service-item {
@@ -215,7 +215,6 @@ body {
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
-  color: #ffffff;
 }
 
 .service-item__image {
@@ -228,7 +227,6 @@ body {
 .service-item__desc {
   font-size: 30px;
   line-height: 41px;
-  color: #ffffff;
   /* не стал указывать-ширина здесь не критична */
   /* width: 541px; */
   /* можно было указать здесь если не указывать width: 541px*/
