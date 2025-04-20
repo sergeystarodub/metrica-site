@@ -235,3 +235,59 @@ body {
 .service-item__indent-wrapper {
   padding-left: 3px;
 }
+
+.header__logo-link {
+  display: block;
+}
+
+.header__logo {
+  display: block;
+  width: 126.89px;
+  height: 21.42px;
+}
+
+.header__logo-wrapper {
+  display: inline-block;
+  /* столько с width */
+  /* margin-right: 545.46px; */
+  /* столько без width у nav-menu__link */
+  margin-right: 549.46px;
+  /* столько по макету - так не получается*/
+  /* margin-right: 558.46px; */
+}
+
+.nav-menu {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.nav-menu__link {
+  margin-right: 60px;
+  display: inline-block;
+  /* height: 25px; */
+  line-height: 25px;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  color: #121212;
+}
+
+.nav-menu__link:last-child {
+  margin-right: 0px;
+}
+
+/* .nav-menu__link_wide-about {
+  width: 51px;
+}
+
+.nav-menu__link_wide-projects {
+  width: 79px;
+}
+
+.nav-menu__link_wide-services {
+  width: 66px;
+}
+
+.nav-menu__link_wide-contacts {
+  width: 90px;
+} */
