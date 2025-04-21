@@ -254,17 +254,20 @@ body {
   margin-right: 549.46px;
   /* столько по макету - так не получается*/
   /* margin-right: 558.46px; */
+  padding-top: 32.82px;
 }
 
 .nav-menu {
   display: inline-block;
+  padding-top: 33px;
+
   vertical-align: top;
 }
 
 .nav-menu__link {
   margin-right: 60px;
   display: inline-block;
-  /* height: 25px; */
+  height: 25px;
   line-height: 25px;
   text-align: center;
   font-size: 18px;
@@ -276,6 +279,7 @@ body {
   margin-right: 0px;
 }
 
+/* может быть удалить из CSS и HTML */
 /* .nav-menu__link_wide-about {
   width: 51px;
 }
@@ -291,3 +295,10 @@ body {
 .nav-menu__link_wide-contacts {
   width: 90px;
 } */
+
+.header {
+  margin-bottom: 70px;
+  /* Для подсветки header-для проверки - потом удалить */
+  /* background-color: aqua; */
+  min-width: 1180px;
+}
