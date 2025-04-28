@@ -304,3 +304,27 @@ body {
   display: inline;
   position: relative;
 }
+
+.fullscreen-image {
+  /* position: relative;
+  height: 717px; */
+  background-image: url(../resources/fullscreen-image/full-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.fullscreen-image__desc {
+  position: absolute;
+  bottom: 60px;
+  width: 443px;
+  font-size: 30px;
+  line-height: 41px;
+  color: #ffffff;
+}
+
+/* сделал так чтобы при наведении вбраузере отображались границы container иначе fullscreen-image__desc вырывается из потока и у container высота = 0*/
+.fullscreen-image__box {
+  position: relative;
+  height: 717px;
+}
