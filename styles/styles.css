@@ -328,3 +328,34 @@ body {
   position: relative;
   height: 717px;
 }
+
+.contacts {
+  padding: 186px 0 160px;
+}
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #121212;
+}
+
+.contacts__title-wrapper {
+  position: relative;
+}
+
+.contacts__title-wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  /* bottom: 37px - высчитал как 25(высота "Контакты") + 12 смещение вверх до значка от "контакты"  */
+  bottom: 37px;
+  left: -5px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../resources/contacts-icons/contacts-icons-phone.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  /* border: 1px solid red; */
+}
