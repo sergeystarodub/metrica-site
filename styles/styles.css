@@ -342,6 +342,7 @@ body {
 
 .contacts__title-wrapper {
   position: relative;
+  margin-bottom: 32px;
 }
 
 .contacts__title-wrapper::before {
@@ -358,4 +359,22 @@ body {
   background-size: cover;
   background-position: 50% 50%;
   /* border: 1px solid red; */
+}
+
+.contacts__telephone {
+  font-size: 60px;
+  line-height: 60px;
+  text-decoration: none;
+  color: #121212;
+}
+
+.contacts__telephone-wrapper {
+  margin-bottom: 30px;
+}
+
+.contacts__email {
+  font-size: 60px;
+  line-height: 60px;
+  text-decoration: none;
+  color: #121212;
 }
