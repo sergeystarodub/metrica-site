@@ -378,3 +378,31 @@ body {
   text-decoration: none;
   color: #121212;
 }
+
+.contacts__email-wrapper {
+  position: relative;
+  /* чтобы hover работал только по этой ширине а не на всю ширину div */
+  width: 412px;
+}
+
+.contacts__email-wrapper:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 3px;
+  width: 406px;
+  /* задал высоту чтобы было видно-2px взял из свойства border: 2px solid #121212 */
+  height: 2px;
+  background-image: url("../resources/contacts-icons/line-email.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: #121212;
+  opacity: 0.5;
+}
+
+.contacts__telephone:hover,
+.contacts__email-wrapper:hover {
+  opacity: 0.5;
+}
