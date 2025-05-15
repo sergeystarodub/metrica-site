@@ -77,8 +77,6 @@ body {
   opacity: 0.5;
 }
 
-
-
 .hero {
   margin-bottom: 150px;
 }
@@ -305,8 +303,6 @@ body {
   padding-left: 3px;
 }
 
-
-
 .fullscreen-image {
   /* position: relative;
   height: 717px; */
@@ -404,41 +400,44 @@ body {
   opacity: 0.5;
 }
 
-/* это свойство нужно чтобы блок был не на всю ширину */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background-color: #121212;
+}
+
 .footer-nav-menu {
-  display: inline-block;
-  
+  /* это свойство не нужно иначе не спозиционируется по центру - закоментил */
+  /* display: inline-block; */
+  margin: 0 auto;
+  margin-bottom: 87px;
+  /* задал примерно сам по макету отличаются - чтобы просмотреть надо на это время прописать display: inline-block; */
+  width: 456px;
 }
 
 .footer-nav-menu__link {
-  /* добавил для позиционирования подчеркивания с помощью absolute */
-  position: relative;
-  margin-right: 60px;
+  margin-right: 55px;
   display: inline-block;
   height: 25px;
   line-height: 25px;
   text-align: center;
   font-size: 18px;
   text-decoration: none;
-  color: #121212;
+  color: #FFFFFF;
 }
 
 .footer-nav-menu__link:last-child {
   margin-right: 0px;
 }
 
-/* если в 3 чекпоинте сделаю nav-menu через ul li список возможно применять after к li */
-.footer-nav-menu__link:hover::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #000000;
+.footer-nav-menu__link:hover {
+  opacity: 0.5;
 }
 
-.footer-nav-menu__link:hover {
+.footer__text {
+  text-align: center;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
   opacity: 0.5;
 }
