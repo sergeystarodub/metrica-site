@@ -403,6 +403,7 @@ body {
 .footer {
   padding-top: 60px;
   padding-bottom: 30px;
+  min-width: 1180px;
   background-color: #121212;
 }
 
