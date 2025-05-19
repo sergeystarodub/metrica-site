@@ -223,6 +223,13 @@ body {
   color: #ad1818;
 }
 
+/* после pixel perfect */
+.project-item__link_withshift {
+  padding-left: 2px;
+  /* сделал width больше на 2px чтобы стрелочка влезла в строку по ширине */
+  width: 129px;
+}
+
 /* первый вариант реализации кнопки */
 /* .projects__btn {
   width: 100%;
@@ -248,7 +255,9 @@ body {
   border-radius: 5px;
   text-align: center;
   font-size: 30px;
-  line-height: 153px;
+  /* line-height: 153px; */
+  /* после pixel perfect 151px так как по 2px на border и в итоге height 151px */
+  line-height: 151px;
   letter-spacing: -0.03em;
   color: #ad1818;
   text-decoration: none;
