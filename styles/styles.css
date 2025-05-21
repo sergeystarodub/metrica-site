@@ -224,7 +224,7 @@ body {
 }
 
 /* после pixel perfect */
-.project-item__link_withshift {
+.project-item__link-shift {
   padding-left: 2px;
   /* сделал width больше на 2px чтобы стрелочка влезла в строку по ширине */
   width: 129px;
@@ -281,6 +281,8 @@ body {
 
 .service-item {
   margin-bottom: 60px;
+  /* для pixel perfect - чтобы спозиционировать по макету */
+  position: relative;
 }
 
 .service-item:nth-last-child(1) {
@@ -294,6 +296,8 @@ body {
 
 .services__title {
   margin-bottom: 34px;
+  /* после pixel perfect про padding */
+  padding-left: 2px;
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
@@ -317,6 +321,15 @@ body {
 
 .service-item__indent-wrapper {
   padding-left: 3px;
+}
+
+/* для pixel perfect */
+.service-item__position-onepx {
+  left: 1px;
+}
+
+.service-item__position-twopx {
+  left: 2px;
 }
 
 .fullscreen-image {
