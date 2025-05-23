@@ -442,16 +442,20 @@ body {
 }
 
 .footer-nav-menu {
-  /* это свойство не нужно иначе не спозиционируется по центру - закоментил */
-  /* display: inline-block; */
-  margin: 0 auto;
+  /* то что закоментил использовал когда выравнивал по центру */
+  /* это свойство не нужно иначе не спозиционируется по центру-если делать по центру закоментить - закоментил */
+  display: inline-block;
+  /* margin: 0 auto; */
   margin-bottom: 87px;
+  /* после pixel perfect padding-left */
+  padding-left: 345px;
   /* задал примерно сам по макету отличаются - чтобы просмотреть надо на это время прописать display: inline-block; */
-  width: 456px;
+  /* width: 456px; */
 }
 
 .footer-nav-menu__link {
-  margin-right: 55px;
+  /* после pixel perfect margin-right: 51px */
+  margin-right: 51px;
   display: inline-block;
   height: 25px;
   line-height: 25px;
@@ -459,6 +463,15 @@ body {
   font-size: 18px;
   text-decoration: none;
   color: #ffffff;
+}
+
+/* после pixel perfect */
+.footer-nav-menu__link-shiftproject {
+  margin-right: 54px;
+}
+/* после pixel perfect */
+.footer-nav-menu__link-shiftservices {
+  margin-right: 53px;
 }
 
 .footer-nav-menu__link:last-child {
@@ -470,7 +483,10 @@ body {
 }
 
 .footer__text {
-  text-align: center;
+  /* то что закоментил-когда выравнивал по центру */
+  /* text-align: center; */
+  /* после pixel perfect padding-left */
+  padding-left: 384px;
   font-size: 20px;
   line-height: 27px;
   color: #ffffff;
