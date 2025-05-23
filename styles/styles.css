@@ -370,6 +370,9 @@ body {
 .contacts__title-wrapper {
   position: relative;
   margin-bottom: 32px;
+  /* добавил после pixel perfect */
+  display: inline-block;
+  left: -1px;
 }
 
 .contacts__title-wrapper::before {
@@ -378,7 +381,9 @@ body {
   position: absolute;
   /* bottom: 37px - высчитал как 25(высота "Контакты") + 12 смещение вверх до значка от "контакты"  */
   bottom: 37px;
-  left: -5px;
+  /* скорректировал после pixel perfect сделал -4 так как -1 сделал в contacts__title-wrapper в итоге -5*/
+  /* left: -5px; */
+  left: -4px;
   width: 24px;
   height: 24px;
   background-image: url("../resources/contacts-icons/contacts-icons-phone.png");
