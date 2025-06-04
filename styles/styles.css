@@ -26,7 +26,8 @@ body {
   display: inline-block;
   /* margin-right: 549.46px; */
   /* после pixel perfect */
-  margin-right: 554.46px;
+  /* закоментил так как сделал через float в nav-menu */
+  /* margin-right: 554.46px; */
 }
 
 .header__logo-image {
@@ -44,17 +45,27 @@ body {
 } */
 
 .nav-menu {
-  display: inline-block;
+  /* закоментил так как в float и так это делает что и display - иначе предупреждение */
+  /* display: inline-block; */
   margin-top: 0.18px;
   vertical-align: top;
+  float: right;
+}
+
+.nav-menu__item {
+  display: inline-block;
+  /* margin-right: 60px; */
+  /* после pixel perfect */
+  margin-right: 58px;
+}
+
+.nav-menu__item:last-child {
+  margin-right: 0px;
 }
 
 .nav-menu__link {
   /* добавил для позиционирования подчеркивания с помощью absolute */
   position: relative;
-  /* margin-right: 60px; */
-  /* после pixel perfect */
-  margin-right: 58px;
   display: inline-block;
   height: 25px;
   line-height: 25px;
@@ -64,11 +75,7 @@ body {
   color: #121212;
 }
 
-.nav-menu__link:last-child {
-  margin-right: 0px;
-}
-
-/* если в 3 чекпоинте сделаю nav-menu через ul li список возможно применять after к li */
+/* если в 3 чекпоинте сделаю nav-menu через ul li список возможно применять after к li - применяется к <a>*/
 .nav-menu__link:hover::after {
   content: "";
   display: block;
