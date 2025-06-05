@@ -460,9 +460,13 @@ body {
   /* width: 456px; */
 }
 
-.footer-nav-menu__link {
+.footer-nav-menu__item {
+  display: inline-block;
   /* после pixel perfect margin-right: 51px */
   margin-right: 51px;
+}
+
+.footer-nav-menu__link {
   display: inline-block;
   height: 25px;
   line-height: 25px;
@@ -473,15 +477,15 @@ body {
 }
 
 /* после pixel perfect */
-.footer-nav-menu__link-shiftproject {
+.footer-nav-menu__item-shiftproject {
   margin-right: 54px;
 }
 /* после pixel perfect */
-.footer-nav-menu__link-shiftservices {
+.footer-nav-menu__item-shiftservices {
   margin-right: 53px;
 }
 
-.footer-nav-menu__link:last-child {
+.footer-nav-menu__item:last-child {
   margin-right: 0px;
 }
 
