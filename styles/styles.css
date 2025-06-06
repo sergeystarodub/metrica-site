@@ -342,6 +342,7 @@ body {
 .fullscreen-image {
   /* position: relative;
   height: 717px; */
+  width: 100%;
   background-image: url(../resources/fullscreen-image/full-image.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -395,8 +396,8 @@ body {
   height: 24px;
   background-image: url("../resources/contacts-icons/contacts-icons-phone.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
+  background-size: contain;
+  background-position: center;
   /* border: 1px solid red; */
 }
 
