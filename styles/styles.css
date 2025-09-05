@@ -452,11 +452,16 @@ body {
 .footer-nav-menu {
   /* то что закоментил использовал когда выравнивал по центру */
   /* это свойство не нужно иначе не спозиционируется по центру-если делать по центру закоментить - закоментил */
-  display: inline-block;
-  /* margin: 0 auto; */
+  /* display: inline-block; */
+  /* сделал по центру padding-left закоментил */
+  /* после pixel perfect position: relative*/
+  position: relative;
+  left: -4px;
+  margin: 0 auto;
   margin-bottom: 87px;
+  width: 450px;
   /* после pixel perfect padding-left */
-  padding-left: 345px;
+  /* padding-left: 345px; */
   /* задал примерно сам по макету отличаются - чтобы просмотреть надо на это время прописать display: inline-block; */
   /* width: 456px; */
 }
@@ -494,11 +499,15 @@ body {
   opacity: 0.5;
 }
 
-.footer__text {
+.footer__copyright {
   /* то что закоментил-когда выравнивал по центру */
-  /* text-align: center; */
+  /* сделал по центру padding-left закоментил */
+  /* после pixel perfect position: relative*/
+  position: relative;
+  left: 3px;
+  text-align: center;
   /* после pixel perfect padding-left */
-  padding-left: 384px;
+  /* padding-left: 384px; */
   font-size: 20px;
   line-height: 27px;
   color: #ffffff;
