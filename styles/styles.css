@@ -409,7 +409,7 @@ body {
   /* border: 1px solid red; */
 }
 
-.contacts__telephone {
+.contacts__telephone, .contacts__email {
   font-size: 60px;
   line-height: 60px;
   text-decoration: none;
@@ -420,12 +420,12 @@ body {
   margin-bottom: 30px;
 }
 
-.contacts__email {
+/* .contacts__email {
   font-size: 60px;
   line-height: 60px;
   text-decoration: none;
   color: #121212;
-}
+} */
 
 .contacts__email-wrapper {
   position: relative;
