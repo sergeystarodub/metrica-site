@@ -3,11 +3,92 @@
   letter-spacing: -0.03em;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   width: 100%;
   font-weight: 400;
   background: #ffffff;
+}
+
+.header {
+  margin-bottom: 70px;
+  padding-top: 32.82px;
+  /* Для подсветки header-для проверки - потом удалить */
+  /* background-color: aqua; */
+  min-width: 1180px;
+}
+
+.header__logo-link {
+  display: inline-block;
+  /* margin-right: 549.46px; */
+  /* после pixel perfect */
+  /* закоментил так как сделал через float в nav-menu */
+  /* margin-right: 554.46px; */
+}
+
+.header__logo-image {
+  display: block;
+  /* width: 126.89px; */
+  /* height: 21.42px; */
+  /* после pixel perfect */
+  width: 128px;
+  height: 23px;
+}
+
+/* сделал сначала так - пока закоментил */
+/* .header__container-wrapper {
+  padding-top: 32.82px;
+} */
+
+.nav-menu {
+  /* закоментил так как в float и так это делает что и display - иначе предупреждение */
+  /* display: inline-block; */
+  margin-top: 0.18px;
+  vertical-align: top;
+  float: right;
+}
+
+.nav-menu__item {
+  display: inline-block;
+  /* margin-right: 60px; */
+  /* после pixel perfect */
+  margin-right: 58px;
+}
+
+.nav-menu__item:last-child {
+  margin-right: 0px;
+}
+
+.nav-menu__link {
+  /* добавил для позиционирования подчеркивания с помощью absolute */
+  position: relative;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  color: #121212;
+}
+
+/* если в 3 чекпоинте сделаю nav-menu через ul li список возможно применять after к li - применяется к <a>*/
+.nav-menu__link:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+}
+
+.nav-menu__link:hover {
+  opacity: 0.5;
 }
 
 .hero {
@@ -126,11 +207,15 @@ body {
   color: #121212;
 }
 
-.project-item__image {
+.project-item__image-wrapper {
   margin-bottom: 15px;
+  height: 450px;
+}
+.project-item__image {
   display: block;
   width: 100%;
-  height: 450px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .project-item__desc {
@@ -147,6 +232,13 @@ body {
   line-height: 27px;
   text-decoration: none;
   color: #ad1818;
+}
+
+/* после pixel perfect */
+.project-item__link-shift {
+  padding-left: 2px;
+  /* сделал width больше на 2px чтобы стрелочка влезла в строку по ширине */
+  width: 129px;
 }
 
 /* первый вариант реализации кнопки */
@@ -174,7 +266,9 @@ body {
   border-radius: 5px;
   text-align: center;
   font-size: 30px;
-  line-height: 153px;
+  /* line-height: 153px; */
+  /* после pixel perfect 151px так как по 2px на border и в итоге height 151px */
+  line-height: 151px;
   letter-spacing: -0.03em;
   color: #ad1818;
   text-decoration: none;
@@ -198,6 +292,8 @@ body {
 
 .service-item {
   margin-bottom: 60px;
+  /* для pixel perfect - чтобы спозиционировать по макету */
+  position: relative;
 }
 
 .service-item:nth-last-child(1) {
@@ -211,16 +307,22 @@ body {
 
 .services__title {
   margin-bottom: 34px;
+  /* после pixel perfect про padding */
+  padding-left: 2px;
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
 }
 
-.service-item__image {
+.service-item__image-wrapper {
   margin-bottom: 15px;
+  height: 270px;
+}
+.service-item__image {
   display: block;
   width: 100%;
-  height: 270px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .service-item__desc {
@@ -234,4 +336,188 @@ body {
 
 .service-item__indent-wrapper {
   padding-left: 3px;
+}
+
+/* для pixel perfect */
+.service-item__position-onepx {
+  left: 1px;
+}
+
+.service-item__position-twopx {
+  left: 2px;
+}
+
+.fullscreen-image {
+  /* position: relative;
+  height: 717px; */
+  width: 100%;
+  background-image: url(../resources/fullscreen-image/full-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.fullscreen-image__desc {
+  position: absolute;
+  bottom: 60px;
+  width: 443px;
+  font-size: 30px;
+  line-height: 41px;
+  color: #ffffff;
+}
+
+/* сделал так чтобы при наведении вбраузере отображались границы container иначе fullscreen-image__desc вырывается из потока и у container высота = 0*/
+.fullscreen-image__box {
+  position: relative;
+  height: 717px;
+}
+
+.contacts {
+  padding: 186px 0 160px;
+}
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #121212;
+}
+
+.contacts__title-wrapper {
+  position: relative;
+  margin-bottom: 32px;
+  /* добавил после pixel perfect */
+  display: inline-block;
+  left: -1px;
+}
+
+.contacts__title-wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  /* bottom: 37px - высчитал как 25(высота "Контакты") + 12 смещение вверх до значка от "контакты"  */
+  bottom: 37px;
+  /* скорректировал после pixel perfect сделал -4 так как -1 сделал в contacts__title-wrapper в итоге -5*/
+  /* left: -5px; */
+  left: -4px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../resources/contacts-icons/contacts-icons-phone.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /* border: 1px solid red; */
+}
+
+.contacts__telephone, .contacts__email {
+  font-size: 60px;
+  line-height: 60px;
+  text-decoration: none;
+  color: #121212;
+}
+
+.contacts__telephone-wrapper {
+  margin-bottom: 30px;
+}
+
+/* .contacts__email {
+  font-size: 60px;
+  line-height: 60px;
+  text-decoration: none;
+  color: #121212;
+} */
+
+.contacts__email-wrapper {
+  position: relative;
+  /* чтобы hover работал только по этой ширине а не на всю ширину div */
+  width: 412px;
+}
+
+.contacts__email-wrapper:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 3px;
+  width: 406px;
+  /* задал высоту чтобы было видно-2px взял из свойства border: 2px solid #121212 */
+  height: 2px;
+  background-color: #121212;
+}
+
+.contacts__telephone:hover,
+.contacts__email-wrapper:hover {
+  opacity: 0.5;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  min-width: 1180px;
+  background-color: #121212;
+}
+
+.footer-nav-menu {
+  /* то что закоментил использовал когда выравнивал по центру */
+  /* это свойство не нужно иначе не спозиционируется по центру-если делать по центру закоментить - закоментил */
+  /* display: inline-block; */
+  /* сделал по центру padding-left закоментил */
+  /* после pixel perfect position: relative*/
+  position: relative;
+  left: -4px;
+  margin: 0 auto;
+  margin-bottom: 87px;
+  width: 450px;
+  /* после pixel perfect padding-left */
+  /* padding-left: 345px; */
+  /* задал примерно сам по макету отличаются - чтобы просмотреть надо на это время прописать display: inline-block; */
+  /* width: 456px; */
+}
+
+.footer-nav-menu__item {
+  display: inline-block;
+  /* после pixel perfect margin-right: 51px */
+  margin-right: 51px;
+}
+
+.footer-nav-menu__link {
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* после pixel perfect */
+.footer-nav-menu__item-shiftproject {
+  margin-right: 54px;
+}
+/* после pixel perfect */
+.footer-nav-menu__item-shiftservices {
+  margin-right: 53px;
+}
+
+.footer-nav-menu__item:last-child {
+  margin-right: 0px;
+}
+
+.footer-nav-menu__link:hover {
+  opacity: 0.5;
+}
+
+.footer__copyright {
+  /* то что закоментил-когда выравнивал по центру */
+  /* сделал по центру padding-left закоментил */
+  /* после pixel perfect position: relative*/
+  position: relative;
+  left: 3px;
+  text-align: center;
+  /* после pixel perfect padding-left */
+  /* padding-left: 384px; */
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+  opacity: 0.5;
 }

@@ -16,12 +16,43 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <!-- Хэдер -->
+    <header class="header">
       <div class="container">
+        <div class="header__container-wrapper">
+          <a class="header__logo-link" href="#">
+            <img
+              class="header__logo-image"
+              src="resources/header-logo/metrica-logo.png"
+              alt="логотип Метрика"
+            />
+          </a>
 
+          <nav class="nav-menu">
+            <ul class="nav-menu__list">
+              <li class="nav-menu__item">
+                <a class="nav-menu__link" href="#about-identifier">О НАС</a>
+              </li>
+              <li class="nav-menu__item">
+                <a class="nav-menu__link" href="#projects-identifier"
+                  >ПРОЕКТЫ</a
+                >
+              </li>
+              <li class="nav-menu__item">
+                <a class="nav-menu__link" href="#services-identifier">УСЛУГИ</a>
+              </li>
+              <li class="nav-menu__item">
+                <a class="nav-menu__link" href="#contacts-identifier"
+                  >КОНТАКТЫ</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </header> -->
+    </header>
     <main>
+      <!-- Секция hero -->
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">
@@ -36,7 +67,8 @@
         </div>
       </section>
 
-      <section class="about">
+      <!-- Секция about -->
+      <section id="about-identifier" class="about">
         <div class="container">
           <h2 class="about__title">О НАС</h2>
           <div class="about__indent-wrapper">
@@ -48,32 +80,41 @@
               результат.
             </p>
           </div>
-          <a class="about__btn" href="#">Посмотреть услуги</a>
+          <a class="about__btn" href="#services-identifier"
+            >Посмотреть услуги</a
+          >
         </div>
       </section>
 
-      <section class="projects">
+      <!-- Секция projects -->
+      <section id="projects-identifier" class="projects">
         <div class="container">
           <h2 class="projects__title">проекты</h2>
           <ul class="projects-enumeration">
             <li class="project-item">
-              <img
-                class="project-item__image"
-                src="resources/projects-image/project-image1.png"
-                alt="диван на фоне окна"
-              />
+              <div class="project-item__image-wrapper">
+                <img
+                  class="project-item__image"
+                  src="resources/projects-image/project-image1.png"
+                  alt="диван на фоне окна"
+                />
+              </div>
               <h3 class="project-item__desc">
                 ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023
               </h3>
-              <a class="project-item__link" href="#">Подробнее →</a>
+              <a class="project-item__link project-item__link-shift" href="#"
+                >Подробнее →</a
+              >
             </li>
 
             <li class="project-item">
-              <img
-                class="project-item__image"
-                src="resources/projects-image/project-image2.png"
-                alt="два кофейных столика в комнате"
-              />
+              <div class="project-item__image-wrapper">
+                <img
+                  class="project-item__image"
+                  src="resources/projects-image/project-image2.png"
+                  alt="два кофейных столика в комнате"
+                />
+              </div>
               <h3 class="project-item__desc">
                 ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023
               </h3>
@@ -81,11 +122,13 @@
             </li>
 
             <li class="project-item">
-              <img
-                class="project-item__image"
-                src="resources/projects-image/project-image3.png"
-                alt="стол с креслами в комнате"
-              />
+              <div class="project-item__image-wrapper">
+                <img
+                  class="project-item__image"
+                  src="resources/projects-image/project-image3.png"
+                  alt="стол с креслами в комнате"
+                />
+              </div>
               <h3 class="project-item__desc">
                 ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022
               </h3>
@@ -97,16 +140,19 @@
         </div>
       </section>
 
-      <section class="services">
+      <!-- Секция services -->
+      <section id="services-identifier" class="services">
         <div class="container">
           <h2 class="services__title">Услуги</h2>
           <ul class="service-list">
             <li class="service-item">
-              <img
-                class="service-item__image"
-                src="resources/services-image/services-image1.png"
-                alt="Карандаш на чертеже"
-              />
+              <div class="service-item__image-wrapper">
+                <img
+                  class="service-item__image"
+                  src="resources/services-image/services-image1.png"
+                  alt="Карандаш на чертеже"
+                />
+              </div>
               <div class="service-item__indent-wrapper">
                 <h3 class="service-item__desc">
                   Планировочное решение — от 2500₽/м²
@@ -114,23 +160,27 @@
               </div>
             </li>
 
-            <li class="service-item">
-              <img
-                class="service-item__image"
-                src="resources/services-image/services-image2.png"
-                alt="Палитра PANTONE"
-              />
+            <li class="service-item service-item__position-onepx">
+              <div class="service-item__image-wrapper">
+                <img
+                  class="service-item__image"
+                  src="resources/services-image/services-image2.png"
+                  alt="Палитра PANTONE"
+                />
+              </div>
               <div class="service-item__indent-wrapper">
                 <h3 class="service-item__desc">Дизайн-проект — от 3000₽/м²</h3>
               </div>
             </li>
 
-            <li class="service-item">
-              <img
-                class="service-item__image"
-                src="resources/services-image/services-image3.png"
-                alt="Работа над чертежом"
-              />
+            <li class="service-item service-item__position-twopx">
+              <div class="service-item__image-wrapper">
+                <img
+                  class="service-item__image"
+                  src="resources/services-image/services-image3.png"
+                  alt="Работа над чертежом"
+                />
+              </div>
               <div class="service-item__indent-wrapper">
                 <h3 class="service-item__desc">
                   Авторский надзор — от 30 000₽ в месяц
@@ -138,12 +188,14 @@
               </div>
             </li>
 
-            <li class="service-item">
-              <img
-                class="service-item__image"
-                src="resources/services-image/services-image4.png"
-                alt="Поддоны на складе"
-              />
+            <li class="service-item service-item__position-twopx">
+              <div class="service-item__image-wrapper">
+                <img
+                  class="service-item__image"
+                  src="resources/services-image/services-image4.png"
+                  alt="Поддоны на складе"
+                />
+              </div>
               <div class="service-item__indent-wrapper">
                 <h3 class="service-item__desc">
                   Комплектация — 5% от стоимости спецификации
@@ -153,12 +205,73 @@
           </ul>
         </div>
       </section>
+
+      <!-- Секция fullscreen-image -->
+      <section class="fullscreen-image">
+        <div class="container">
+          <div class="fullscreen-image__box">
+            <h3 class="fullscreen-image__desc">
+              <!-- вставил пробел спомощью спецсимвола после pixel perfect -->
+              Проект &nbsp;Двухкомнатной квартиры в ЖК Лесной Пейзаж
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция contacts -->
+      <section id="contacts-identifier" class="contacts">
+        <div class="container">
+          <div class="contacts__title-wrapper">
+            <h2 class="contacts__title">Контакты</h2>
+          </div>
+          <div class="contacts__telephone-wrapper">
+            <!-- вставил пробел спомощью спецсимвола после pixel perfect -->
+            <a class="contacts__telephone" href="tel:+79358954535"
+              >+7 935 &nbsp;895-45-35</a
+            >
+          </div>
+          <div class="contacts__email-wrapper">
+            <a class="contacts__email" href="mailto:hello@mail.com"
+              >hello@mail.com</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- <footer class="footer">
+    <!-- Футер -->
+    <footer class="footer">
       <div class="container">
-
+        <nav class="footer-nav-menu">
+          <ul class="footer-nav-menu__list">
+            <li class="footer-nav-menu__item">
+              <a class="footer-nav-menu__link" href="#about-identifier"
+                >О НАС</a
+              >
+            </li>
+            <li
+              class="footer-nav-menu__item footer-nav-menu__item-shiftproject"
+            >
+              <a class="footer-nav-menu__link" href="#projects-identifier"
+                >ПРОЕКТЫ</a
+              >
+            </li>
+            <li
+              class="footer-nav-menu__item footer-nav-menu__item-shiftservices"
+            >
+              <a class="footer-nav-menu__link" href="#services-identifier"
+                >УСЛУГИ</a
+              >
+            </li>
+            <li class="footer-nav-menu__item">
+              <a class="footer-nav-menu__link" href="#contacts-identifier"
+                >КОНТАКТЫ</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <p class="footer__copyright">студия дизайна интерьера Метрика — 2023</p>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>
