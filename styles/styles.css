@@ -415,7 +415,8 @@ body {
   /* border: 1px solid red; */
 }
 
-.contacts__telephone, .contacts__email {
+.contacts__telephone,
+.contacts__email {
   font-size: 60px;
   line-height: 60px;
   text-decoration: none;
@@ -535,12 +536,17 @@ body {
     max-width: 100%;
     padding-left: 15px;
     padding-right: 15px;
-
+  }
+  .hero {
+    margin-bottom: 120px;
   }
 
   .hero__title {
     width: 802px;
     font-size: 50px;
+  }
+  .about {
+    margin-bottom: 120px;
   }
 
   .about__desc {
@@ -548,16 +554,18 @@ body {
     font-size: 35px;
     line-height: 48px;
   }
-  
 }
 
 @media (max-width: 767px) {
   .container {
     padding-left: 13px;
     padding-right: 13px;
-
+  }
+  .hero {
+    margin-bottom: 80px;
   }
   .hero__title {
+    margin-bottom: 25px;
     width: 100%;
     font-size: 30px;
     line-height: 31.62px;
@@ -567,7 +575,11 @@ body {
     font-size: 16px;
     line-height: 22px;
   }
+  .about {
+    margin-bottom: 80px;
+  }
   .about__title {
+    margin-bottom: 20px;
     font-size: 14px;
     line-height: 19px;
   }
@@ -577,4 +589,3 @@ body {
     line-height: 30px;
   }
 }
-
