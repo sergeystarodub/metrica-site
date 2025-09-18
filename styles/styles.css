@@ -542,7 +542,11 @@ body {
   }
 
   .hero__title {
-    width: 802px;
+    /* закоментил потом удалить */
+    /* width: 802px; */
+    /* так тоже не работает-все равно вылазит за границы */
+    /* max-width: 802px; */
+    width: 100%;
     font-size: 50px;
   }
   .about {
@@ -568,13 +572,15 @@ body {
     margin-bottom: 25px;
     width: 100%;
     font-size: 30px;
-    line-height: 31.62px;
+    /* line-height: 31.62px; */
+    line-height: 32px;
   }
-  .hero__desc {
+  /* когда буду делать по видео раскоментить */
+  /* .hero__desc {
     width: 312px;
     font-size: 16px;
     line-height: 22px;
-  }
+  } */
   .about {
     margin-bottom: 80px;
   }
