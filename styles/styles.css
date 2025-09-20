@@ -96,9 +96,9 @@ body {
 }
 
 .hero__title {
-  /* пока сделал так - закоментил max-width*/
-  width: 956px;
-  /* max-width: 956px; */
+  /* пока сделал так - разкоментил max-width*/
+  /* width: 956px; */
+  max-width: 956px;
   margin-bottom: 30px;
   color: #121212;
   font-size: 60px;
@@ -544,11 +544,21 @@ body {
   .hero__title {
     /* закоментил потом удалить */
     /* width: 802px; */
-    /* так тоже не работает-все равно вылазит за границы */
-    /* max-width: 802px; */
-    width: 100%;
+    /* так работает если сделать на десктопе max-width: 956px*/
+    max-width: 802px;
+    /* закоментил сделал по другому через max-width */
+    /* width: 100%; */
     font-size: 50px;
   }
+
+  .hero__block {
+    height: 400px;
+  }
+
+  .hero__desc {
+    bottom: 30px;
+  }
+
   .about {
     margin-bottom: 120px;
   }
@@ -575,12 +585,19 @@ body {
     /* line-height: 31.62px; */
     line-height: 32px;
   }
-  /* когда буду делать по видео раскоментить */
-  /* .hero__desc {
+
+  .hero__block {
+    height: 304px;
+  }
+
+  
+  .hero__desc {
+    left: 15px;
+    bottom: 15px;
     width: 312px;
     font-size: 16px;
     line-height: 22px;
-  } */
+  }
   .about {
     margin-bottom: 80px;
   }
