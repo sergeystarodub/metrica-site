@@ -556,6 +556,7 @@ body {
   }
 
   .hero__desc {
+    left: 42px;
     bottom: 30px;
   }
 
@@ -590,7 +591,6 @@ body {
     height: 304px;
   }
 
-  
   .hero__desc {
     left: 15px;
     bottom: 15px;
