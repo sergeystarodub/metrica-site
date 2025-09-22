@@ -611,4 +611,12 @@ body {
     font-size: 22px;
     line-height: 30px;
   }
+
+  .about__btn {
+    padding: 14.5px 27px;
+    width: 194px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
