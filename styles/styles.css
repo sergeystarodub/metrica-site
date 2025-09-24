@@ -569,6 +569,24 @@ body {
     font-size: 35px;
     line-height: 48px;
   }
+
+  .projects {
+    margin-bottom: 100px;
+  }
+
+  .projects-enumeration {
+    margin-bottom: 100px;
+  }
+
+  .project-item {
+    margin-bottom: 80px;
+  }
+
+  .project-item__desc {
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 34px;
+  }
 }
 
 @media (max-width: 767px) {
