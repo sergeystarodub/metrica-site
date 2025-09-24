@@ -241,7 +241,7 @@ body {
 }
 
 /* после pixel perfect */
-.project-item__link-shift {
+.project-item__link_shift {
   padding-left: 2px;
   /* сделал width больше на 2px чтобы стрелочка влезла в строку по ширине */
   width: 129px;
@@ -636,5 +636,47 @@ body {
     border-radius: 4px;
     font-size: 16px;
     line-height: 22px;
+  }
+
+  .projects {
+    margin-bottom: 80px;
+  }
+
+  .projects__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .projects-enumeration {
+    margin-bottom: 60px;
+  }
+
+  .project-item {
+    margin-bottom: 49px;
+  }
+
+  .project-item__image-wrapper {
+    margin-bottom: 20px;
+    height: 250px;
+  }
+
+  .project-item__desc {
+    margin-bottom: 11px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .project-item__link {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .projects__btn {
+    height: 100px;
+    border: 0.76px solid #ad1818;
+    border-radius: 4px;
+    font-size: 22px;
+    line-height: 100px;
   }
 }
