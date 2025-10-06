@@ -1,0 +1,101 @@
+.project-item {
+  margin-bottom: 90px;
+}
+
+.project-item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+/* еще один вариант обнуления отступа у последнего элемента в ul - есть пробел между : */
+/* .projects-enumeration :nth-last-child(1) {
+  margin-bottom: 0;
+} */
+
+.projects-enumeration {
+  margin-bottom: 90px;
+}
+
+.projects__title {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #121212;
+}
+
+.project-item__image-wrapper {
+  margin-bottom: 15px;
+  height: 450px;
+}
+.project-item__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-item__desc {
+  margin-bottom: 15px;
+  font-size: 30px;
+  line-height: 41px;
+  color: #121212;
+}
+
+.project-item__link {
+  width: 127px;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 27px;
+  text-decoration: none;
+  color: #ad1818;
+}
+
+/* после pixel perfect */
+.project-item__link_shift {
+  padding-left: 2px;
+  /* сделал width больше на 2px чтобы стрелочка влезла в строку по ширине */
+  width: 129px;
+}
+
+/* первый вариант реализации кнопки */
+/* .projects__btn {
+  width: 100%;
+  padding: 56px 0px 56px 0px;
+  display: block;
+  border: 1px solid #ad1818;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 41px;
+  letter-spacing: -0.03em;
+  color: #ad1818;
+  text-decoration: none;
+  cursor: pointer;
+} */
+
+/* второй вариант реализации кнопки с помощью line-height: 153px */
+.projects__btn {
+  width: 100%;
+  height: 153px;
+  display: block;
+  border: 1px solid #ad1818;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 30px;
+  /* line-height: 153px; */
+  /* после pixel perfect 151px так как по 2px на border и в итоге height 151px */
+  line-height: 151px;
+  letter-spacing: -0.03em;
+  color: #ad1818;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.projects__btn:hover {
+  background-color: #ad1818;
+  color: #ffffff;
+}
+
+.projects {
+  margin-bottom: 150px;
+}
