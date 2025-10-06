@@ -1,0 +1,35 @@
+.hero {
+  margin-bottom: 150px;
+}
+
+.hero__title {
+  /* пока сделал так - разкоментил max-width*/
+  /* width: 956px; */
+  max-width: 956px;
+  margin-bottom: 30px;
+  color: #121212;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.hero__block {
+  position: relative;
+  /* это было до адаптива */
+  /* width: 1150px; */
+  width: 100%;
+  height: 500px;
+  background-image: url("../resources/interior-photo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero__desc {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  width: 430px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 27px;
+}
