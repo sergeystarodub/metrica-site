@@ -36,147 +36,16 @@ body {
     max-width: 100%;
     padding-left: 15px;
     padding-right: 15px;
-  }
-  .hero {
-    margin-bottom: 120px;
-  }
-
-  .hero__title {
-    /* закоментил потом удалить */
-    /* width: 802px; */
-    /* так работает если сделать на десктопе max-width: 956px*/
-    max-width: 802px;
-    /* закоментил сделал по другому через max-width */
-    /* width: 100%; */
-    font-size: 50px;
-  }
-
-  .hero__block {
-    height: 400px;
-  }
-
-  .hero__desc {
-    left: 42px;
-    bottom: 30px;
-  }
-
-  .about {
-    margin-bottom: 120px;
-  }
-
-  .about__desc {
-    width: 690px;
-    font-size: 35px;
-    line-height: 48px;
-  }
-
-  .projects {
-    margin-bottom: 100px;
-  }
-
-  .projects-enumeration {
-    margin-bottom: 100px;
-  }
-
-  .project-item {
-    margin-bottom: 80px;
-  }
-
-  .project-item__desc {
-    margin-bottom: 10px;
-    font-size: 25px;
-    line-height: 34px;
+    /* потом закоментить */
+    background-color: green;
   }
 }
 
 @media (max-width: 767px) {
   .container {
     padding-left: 13px;
-    padding-right: 13px;
-  }
-  .hero {
-    margin-bottom: 80px;
-  }
-  .hero__title {
-    margin-bottom: 25px;
-    width: 100%;
-    font-size: 30px;
-    /* line-height: 31.62px; */
-    line-height: 32px;
-  }
-
-  .hero__block {
-    height: 304px;
-  }
-
-  .hero__desc {
-    left: 15px;
-    bottom: 15px;
-    width: 312px;
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .about {
-    margin-bottom: 80px;
-  }
-  .about__title {
-    margin-bottom: 20px;
-    font-size: 14px;
-    line-height: 19px;
-  }
-  .about__desc {
-    width: 100%;
-    font-size: 22px;
-    line-height: 30px;
-  }
-
-  .about__btn {
-    padding: 14.5px 27px;
-    width: 194px;
-    border-radius: 4px;
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .projects {
-    margin-bottom: 80px;
-  }
-
-  .projects__title {
-    margin-bottom: 20px;
-    font-size: 14px;
-    line-height: 19px;
-  }
-
-  .projects-enumeration {
-    margin-bottom: 60px;
-  }
-
-  .project-item {
-    margin-bottom: 49px;
-  }
-
-  .project-item__image-wrapper {
-    margin-bottom: 20px;
-    height: 250px;
-  }
-
-  .project-item__desc {
-    margin-bottom: 11px;
-    font-size: 18px;
-    line-height: 25px;
-  }
-
-  .project-item__link {
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .projects__btn {
-    height: 100px;
-    border: 0.76px solid #ad1818;
-    border-radius: 4px;
-    font-size: 22px;
-    line-height: 100px;
+    padding-right: 12px;
+    /* потом закоментить */
+    background-color: red;
   }
 }

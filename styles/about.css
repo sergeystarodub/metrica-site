@@ -52,3 +52,41 @@
 .about {
   margin-bottom: 150px;
 }
+
+@media (max-width: 1199px) {
+  .about {
+    margin-bottom: 120px;
+  }
+
+  .about__desc {
+    width: 690px;
+    font-size: 35px;
+    line-height: 48px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .about {
+    margin-bottom: 80px;
+  }
+  .about__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .about__desc {
+    width: 100%;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .about__btn {
+    padding: 14.5px 27px;
+    width: 194px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+}
