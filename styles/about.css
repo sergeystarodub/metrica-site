@@ -31,7 +31,8 @@
 .about__btn {
   padding: 20px 40px;
   /* добавил width я так как не хватало внутренней ширины текста 175px было 173.938 */
-  width: 255px;
+  /* закоментил - так сказали в разборе */
+  /* width: 255px; */
   display: inline-block;
   border-radius: 5px;
   background-color: #ad1818;
@@ -63,7 +64,6 @@
     font-size: 35px;
     line-height: 48px;
   }
-
 }
 
 @media (max-width: 767px) {
@@ -75,6 +75,11 @@
     font-size: 14px;
     line-height: 19px;
   }
+
+  .about__indent-wrapper {
+    /* после pixel perfect */
+    padding-left: 0;
+  }
   .about__desc {
     width: 100%;
     font-size: 22px;
@@ -83,10 +88,9 @@
 
   .about__btn {
     padding: 14.5px 27px;
-    width: 194px;
+    /* width: 194px; */
     border-radius: 4px;
     font-size: 16px;
     line-height: 22px;
   }
-
 }
