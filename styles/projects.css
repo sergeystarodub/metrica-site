@@ -76,6 +76,7 @@
 /* второй вариант реализации кнопки с помощью line-height: 153px */
 .projects__btn {
   width: 100%;
+  /* можно ли использовать min-height вместо height чтобы при уменьшенни сильном экране текст не вылазил за нижнюю границу ? */
   height: 153px;
   display: block;
   border: 1px solid #ad1818;
@@ -120,7 +121,7 @@
   }
 }
 
-@media (min-width: 767px) {
+@media (max-width: 767px) {
   .projects {
     margin-bottom: 80px;
   }
@@ -156,6 +157,7 @@
   }
 
   .projects__btn {
+    /* можно ли использовать min-height вместо height чтобы при уменьшенни сильном экране текст не вылазил за нижнюю границу ? */
     height: 100px;
     border: 0.76px solid #ad1818;
     border-radius: 4px;

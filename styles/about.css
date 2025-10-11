@@ -6,9 +6,9 @@
 }
 
 .about__desc {
-  /* пока сделал так - закоментил max-width*/
-  width: 1048px;
-  /* max-width: 1048px; */
+  /* пока сделал так - закоментил width*/
+  /* width: 1048px; */
+  max-width: 1048px;
   color: #121212;
   font-size: 45px;
   line-height: 61px;
@@ -60,7 +60,8 @@
   }
 
   .about__desc {
-    width: 690px;
+    /* width: 690px; */
+    max-width: 690px;
     font-size: 35px;
     line-height: 48px;
   }
@@ -81,7 +82,8 @@
     padding-left: 0;
   }
   .about__desc {
-    width: 100%;
+    /* width: 100%; */
+    max-width: 100%;
     font-size: 22px;
     line-height: 30px;
   }
