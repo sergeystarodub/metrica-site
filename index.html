@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Метрика</title>
-    <link rel="icon" href="resources/favicon.png" type="image/png">
+    <link rel="icon" href="resources/favicon.png" type="image/png" />
 
     <link rel="stylesheet" href="styles/reset.css" />
 
@@ -94,11 +94,21 @@
           <ul class="projects-enumeration">
             <li class="project-item">
               <div class="project-item__image-wrapper">
-                <img
-                  class="project-item__image"
-                  src="resources/projects-image/project-image1.png"
-                  alt="диван на фоне окна"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 500px)"
+                    srcset="resources/projects-image/project-image1_mobile.png"
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="resources/projects-image/project-image1_tablet.png"
+                  />
+                  <img
+                    class="project-item__image"
+                    src="resources/projects-image/project-image1.png"
+                    alt="диван на фоне окна"
+                  />
+                </picture>
               </div>
               <h3 class="project-item__desc">
                 ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023
@@ -110,11 +120,21 @@
 
             <li class="project-item">
               <div class="project-item__image-wrapper">
-                <img
-                  class="project-item__image"
-                  src="resources/projects-image/project-image2.png"
-                  alt="два кофейных столика в комнате"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 500px)"
+                    srcset="resources/projects-image/project-image2_mobile.png"
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="resources/projects-image/project-image2_tablet.png"
+                  />
+                  <img
+                    class="project-item__image"
+                    src="resources/projects-image/project-image2.png"
+                    alt="два кофейных столика в комнате"
+                  />
+                </picture>
               </div>
               <h3 class="project-item__desc">
                 ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023
@@ -124,11 +144,21 @@
 
             <li class="project-item">
               <div class="project-item__image-wrapper">
-                <img
-                  class="project-item__image"
-                  src="resources/projects-image/project-image3.png"
-                  alt="стол с креслами в комнате"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 500px)"
+                    srcset="resources/projects-image/project-image3_mobile.png"
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="resources/projects-image/project-image3_tablet.png"
+                  />
+                  <img
+                    class="project-item__image"
+                    src="resources/projects-image/project-image3.png"
+                    alt="стол с креслами в комнате"
+                  />
+                </picture>
               </div>
               <h3 class="project-item__desc">
                 ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022
