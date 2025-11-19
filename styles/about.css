@@ -1,8 +1,18 @@
+.about {
+  margin-bottom: 150px;
+}
+
 .about__title {
   margin-bottom: 30px;
   color: #121212;
   font-size: 18px;
   line-height: 25px;
+}
+
+.about__indent-wrapper {
+  /* этим классом создал для <p class="description"> родителя <div class="indent"> относительно которого задал отступ padding-left: 3px и тем самым оставил корректный размер у <p class="description"> не изменяя его падингом*/
+  padding-left: 3px;
+  margin-bottom: 30px;
 }
 
 .about__desc {
@@ -44,15 +54,9 @@
   cursor: pointer;
 }
 
-.about__indent-wrapper {
-  /* этим классом создал для <p class="description"> родителя <div class="indent"> относительно которого задал отступ padding-left: 3px и тем самым оставил корректный размер у <p class="description"> не изменяя его падингом*/
-  padding-left: 3px;
-  margin-bottom: 30px;
-}
 
-.about {
-  margin-bottom: 150px;
-}
+
+
 
 @media (max-width: 1199px) {
   .about {
