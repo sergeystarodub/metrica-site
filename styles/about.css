@@ -59,11 +59,21 @@
     margin-bottom: 120px;
   }
 
+  .about__title {
+    /* после pixel perfect */
+    padding-left: 2px;
+  }
+
   .about__desc {
     /* width: 690px; */
     max-width: 690px;
     font-size: 35px;
     line-height: 48px;
+  }
+  /* после pixel perfect */
+  .about__btn {
+    position: relative;
+    left: 2px;
   }
 }
 

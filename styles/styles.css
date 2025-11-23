@@ -35,7 +35,9 @@ body {
   .container {
     max-width: 100%;
     padding-left: 15px;
-    padding-right: 15px;
+    /* padding-right: 15px; */
+    /* сжелал пока так */
+    padding-right: 17px;
     /* потом закоментить */
     background-color: green;
   }
