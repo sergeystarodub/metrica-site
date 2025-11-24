@@ -156,6 +156,11 @@
     line-height: 22px;
   }
 
+  /* после pixel perfect */
+  .project-item__link_shift {
+    padding-left: 0;
+  }
+
   .projects__btn {
     /* можно ли использовать min-height вместо height чтобы при уменьшенни сильном экране текст не вылазил за нижнюю границу ? */
     height: 100px;

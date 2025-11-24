@@ -85,6 +85,8 @@
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 19px;
+    /* после pixel perfect */
+    padding-left: 0;
   }
 
   .about__indent-wrapper {
@@ -104,5 +106,7 @@
     border-radius: 4px;
     font-size: 16px;
     line-height: 22px;
+    /* после pixel perfect */
+    left: 0;
   }
 }
