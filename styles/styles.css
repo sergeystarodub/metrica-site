@@ -39,7 +39,7 @@ body {
     /* сжелал пока так */
     padding-right: 17px;
     /* потом закоментить */
-    background-color: green;
+    /* background-color: green; */
   }
 }
 
@@ -48,6 +48,6 @@ body {
     padding-left: 13px;
     padding-right: 12px;
     /* потом закоментить */
-    background-color: red;
+    /* background-color: red; */
   }
 }
