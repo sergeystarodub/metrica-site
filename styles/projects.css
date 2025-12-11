@@ -81,7 +81,9 @@
 .projects__btn {
   width: 100%;
   /* можно ли использовать min-height вместо height чтобы при уменьшенни сильном экране текст не вылазил за нижнюю границу ? */
-  height: 153px;
+  /* height: 153px; */
+  /* пока сделал через min-height чтобы при уменьшении экрана текст не вылазил из кнопки потом может добавлю флексбокс вместо line-height */
+  min-height: 153px;
   display: block;
   border: 1px solid #ad1818;
   border-radius: 5px;
@@ -163,10 +165,14 @@
 
   .projects__btn {
     /* можно ли использовать min-height вместо height чтобы при уменьшенни сильном экране текст не вылазил за нижнюю границу ? */
-    height: 100px;
+    /* height: 100px; */
+    /* пока сделал через min-height чтобы при уменьшении экрана текст не вылазил из кнопки потом может добавлю флексбокс вместо line-height */
+    min-height: 100px;
     border: 0.76px solid #ad1818;
     border-radius: 4px;
     font-size: 22px;
-    line-height: 100px;
+    /* line-height: 100px; */
+    /* после pixel perfect - так как учитывается еще border*/
+    line-height: 98px;
   }
 }
