@@ -94,8 +94,9 @@
     padding-left: 0;
   }
   .about__desc {
-    /* width: 100%; */
-    max-width: 100%;
+    width: 100%;
+    /* Закоментил так как лучше для мобилок задать width: 100% */
+    /* max-width: 100%; */
     font-size: 22px;
     line-height: 30px;
   }
