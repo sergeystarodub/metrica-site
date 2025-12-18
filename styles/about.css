@@ -1,0 +1,113 @@
+.about {
+  margin-bottom: 150px;
+}
+
+.about__title {
+  margin-bottom: 30px;
+  color: #121212;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.about__indent-wrapper {
+  /* этим классом создал для <p class="description"> родителя <div class="indent"> относительно которого задал отступ padding-left: 3px и тем самым оставил корректный размер у <p class="description"> не изменяя его падингом*/
+  padding-left: 3px;
+  margin-bottom: 30px;
+}
+
+.about__desc {
+  /* пока сделал так - закоментил width*/
+  /* width: 1048px; */
+  max-width: 1048px;
+  color: #121212;
+  font-size: 45px;
+  line-height: 61px;
+}
+
+/* .about__btn {
+  width: 255px;
+  height: 67px;
+  display: block;
+  background-color: #ad1818;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  line-height: 67px;
+  cursor: pointer;
+  border-radius: 5px;
+} */
+
+.about__btn {
+  padding: 20px 40px;
+  /* добавил width я так как не хватало внутренней ширины текста 175px было 173.938 */
+  /* закоментил - так сказали в разборе */
+  /* width: 255px; */
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #ad1818;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  line-height: 27px;
+  cursor: pointer;
+}
+
+@media (max-width: 1199px) {
+  .about {
+    margin-bottom: 120px;
+  }
+
+  .about__title {
+    /* после pixel perfect */
+    padding-left: 2px;
+  }
+
+  .about__desc {
+    /* width: 690px; */
+    max-width: 690px;
+    font-size: 35px;
+    line-height: 48px;
+  }
+  /* после pixel perfect */
+  .about__btn {
+    position: relative;
+    left: 2px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    margin-bottom: 80px;
+  }
+  .about__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 19px;
+    /* после pixel perfect */
+    padding-left: 0;
+  }
+
+  .about__indent-wrapper {
+    /* после pixel perfect */
+    padding-left: 0;
+  }
+  .about__desc {
+    width: 100%;
+    /* Закоментил так как лучше для мобилок задать width: 100% */
+    /* max-width: 100%; */
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .about__btn {
+    padding: 14.5px 27px;
+    /* width: 194px; */
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 22px;
+    /* после pixel perfect */
+    left: 0;
+  }
+}

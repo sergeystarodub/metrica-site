@@ -1,0 +1,77 @@
+.header {
+  margin-bottom: 70px;
+  padding-top: 32.82px;
+  /* Для подсветки header-для проверки - потом удалить */
+  /* background-color: aqua; */
+  /* возможно убратьв адаптиве */
+  min-width: 1180px;
+}
+
+.header__logo-link {
+  display: inline-block;
+  /* margin-right: 549.46px; */
+  /* после pixel perfect */
+  /* закоментил так как сделал через float в nav-menu */
+  /* margin-right: 554.46px; */
+}
+
+.header__logo-image {
+  display: block;
+  /* width: 126.89px; */
+  /* height: 21.42px; */
+  /* после pixel perfect */
+  width: 128px;
+  height: 23px;
+}
+
+/* сделал сначала так - пока закоментил */
+/* .header__container-wrapper {
+  padding-top: 32.82px;
+} */
+
+.nav-menu {
+  /* закоментил так как в float и так это делает что и display - иначе предупреждение */
+  /* display: inline-block; */
+  margin-top: 0.18px;
+  vertical-align: top;
+  float: right;
+}
+
+.nav-menu__item {
+  display: inline-block;
+  /* margin-right: 60px; */
+  /* после pixel perfect */
+  margin-right: 58px;
+}
+
+.nav-menu__item:last-child {
+  margin-right: 0px;
+}
+
+.nav-menu__link {
+  /* добавил для позиционирования подчеркивания с помощью absolute */
+  position: relative;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  color: #121212;
+}
+
+/* если в 3 чекпоинте сделаю nav-menu через ul li список возможно применять after к li - применяется к <a>*/
+.nav-menu__link:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+}
+
+.nav-menu__link:hover {
+  opacity: 0.5;
+}

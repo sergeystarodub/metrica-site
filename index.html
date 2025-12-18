@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Метрика</title>
+    <link rel="icon" href="resources/favicon.png" type="image/png" />
 
     <link rel="stylesheet" href="styles/reset.css" />
 
@@ -17,7 +18,7 @@
   </head>
   <body>
     <!-- Хэдер -->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <div class="header__container-wrapper">
           <a class="header__logo-link" href="#">
@@ -50,7 +51,7 @@
           </nav>
         </div>
       </div>
-    </header>
+    </header> -->
     <main>
       <!-- Секция hero -->
       <section class="hero">
@@ -93,27 +94,47 @@
           <ul class="projects-enumeration">
             <li class="project-item">
               <div class="project-item__image-wrapper">
-                <img
-                  class="project-item__image"
-                  src="resources/projects-image/project-image1.png"
-                  alt="диван на фоне окна"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 500px)"
+                    srcset="resources/projects-image/project-image1_mobile.png"
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="resources/projects-image/project-image1_tablet.png"
+                  />
+                  <img
+                    class="project-item__image"
+                    src="resources/projects-image/project-image1.png"
+                    alt="диван на фоне окна"
+                  />
+                </picture>
               </div>
               <h3 class="project-item__desc">
                 ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023
               </h3>
-              <a class="project-item__link project-item__link-shift" href="#"
+              <a class="project-item__link project-item__link_shift" href="#"
                 >Подробнее →</a
               >
             </li>
 
             <li class="project-item">
               <div class="project-item__image-wrapper">
-                <img
-                  class="project-item__image"
-                  src="resources/projects-image/project-image2.png"
-                  alt="два кофейных столика в комнате"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 500px)"
+                    srcset="resources/projects-image/project-image2_mobile.png"
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="resources/projects-image/project-image2_tablet.png"
+                  />
+                  <img
+                    class="project-item__image"
+                    src="resources/projects-image/project-image2.png"
+                    alt="два кофейных столика в комнате"
+                  />
+                </picture>
               </div>
               <h3 class="project-item__desc">
                 ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023
@@ -123,11 +144,21 @@
 
             <li class="project-item">
               <div class="project-item__image-wrapper">
-                <img
-                  class="project-item__image"
-                  src="resources/projects-image/project-image3.png"
-                  alt="стол с креслами в комнате"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 500px)"
+                    srcset="resources/projects-image/project-image3_mobile.png"
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="resources/projects-image/project-image3_tablet.png"
+                  />
+                  <img
+                    class="project-item__image"
+                    src="resources/projects-image/project-image3.png"
+                    alt="стол с креслами в комнате"
+                  />
+                </picture>
               </div>
               <h3 class="project-item__desc">
                 ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022
@@ -141,7 +172,7 @@
       </section>
 
       <!-- Секция services -->
-      <section id="services-identifier" class="services">
+      <!-- <section id="services-identifier" class="services">
         <div class="container">
           <h2 class="services__title">Услуги</h2>
           <ul class="service-list">
@@ -204,28 +235,30 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Секция fullscreen-image -->
-      <section class="fullscreen-image">
+      <!-- после того как раскоментирую - закоментить вставил пробел с помощью -->
+      <!-- <section class="gallery">
         <div class="container">
-          <div class="fullscreen-image__box">
-            <h3 class="fullscreen-image__desc">
-              <!-- вставил пробел спомощью спецсимвола после pixel perfect -->
+          <div class="gallery__box">
+            <h3 class="gallery__desc">
+              вставил пробел спомощью спецсимвола после pixel perfect
               Проект &nbsp;Двухкомнатной квартиры в ЖК Лесной Пейзаж
             </h3>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Секция contacts -->
-      <section id="contacts-identifier" class="contacts">
+      <!-- после того как раскоментирую - закоментить вставил пробел с помощью -->
+      <!-- <section id="contacts-identifier" class="contacts">
         <div class="container">
           <div class="contacts__title-wrapper">
             <h2 class="contacts__title">Контакты</h2>
           </div>
           <div class="contacts__telephone-wrapper">
-            <!-- вставил пробел спомощью спецсимвола после pixel perfect -->
+            вставил пробел спомощью спецсимвола после pixel perfect
             <a class="contacts__telephone" href="tel:+79358954535"
               >+7 935 &nbsp;895-45-35</a
             >
@@ -236,11 +269,11 @@
             >
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Футер -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <nav class="footer-nav-menu">
           <ul class="footer-nav-menu__list">
@@ -272,6 +305,6 @@
         </nav>
         <p class="footer__copyright">студия дизайна интерьера Метрика — 2023</p>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
