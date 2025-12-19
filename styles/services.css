@@ -4,15 +4,25 @@
   color: #ffffff;
 }
 
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 80.7px;
+}
+
 .service-item {
-  margin-bottom: 60px;
+  /* не нужно так как применяю флексбокс - потом все что не нужно удалить */
+  /* margin-bottom: 60px; */
+  width: calc(50% - 5.5px);
   /* для pixel perfect - чтобы спозиционировать по макету */
   position: relative;
 }
 
-.service-item:nth-last-child(1) {
+/* не нужно так как применяю флексбокс */
+/* .service-item:nth-last-child(1) {
   margin-bottom: 0;
-}
+} */
 
 /* еще один вариант обнуления отступа у последнего элемента в ul - есть пробел между :  */
 /* .service-list :nth-last-child(1) {
@@ -20,7 +30,9 @@
 } */
 
 .services__title {
-  margin-bottom: 34px;
+  /* было раньше в первом макете */
+  /* margin-bottom: 34px; */
+  margin-bottom: 29.93px;
   /* после pixel perfect про padding */
   padding-left: 2px;
   font-size: 18px;
@@ -30,7 +42,8 @@
 
 .service-item__image-wrapper {
   margin-bottom: 15px;
-  height: 270px;
+  /* height: 270px; */
+  height: 388.03px;
 }
 .service-item__image {
   display: block;
