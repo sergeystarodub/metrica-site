@@ -41,9 +41,18 @@
 }
 
 .service-item__image-wrapper {
-  margin-bottom: 15px;
+  margin-bottom: 24.94px;
+  /* margin-bottom: 15px; */
   /* height: 270px; */
   height: 388.03px;
+}
+
+.service-item__image-wrapper_bottom-first-column {
+  margin-bottom: 25.82px;
+}
+
+.service-item__image-wrapper_bottom-second-column {
+  margin-bottom: 25.94px;
 }
 .service-item__image {
   display: block;
@@ -54,7 +63,9 @@
 
 .service-item__desc {
   font-size: 30px;
-  line-height: 41px;
+  line-height: 40px;
+  /* для первого макета десктоп */
+  /* line-height: 41px; */
   /* не стал указывать-ширина здесь не критична */
   /* width: 541px; */
   /* можно было указать здесь если не указывать width: 541px*/
@@ -66,10 +77,19 @@
 }
 
 /* для pixel perfect */
+.service-item__indent-wrapper_large-left-padding {
+  padding-left: 5px;
+}
+
+/* для pixel perfect */
 .service-item__position-onepx {
-  left: 1px;
+  /* для первого макета десктоп */
+  /* left: 1px; */
+  left: 0;
 }
 
 .service-item__position-twopx {
-  left: 2px;
+  /* для первого макета десктоп */
+  /* left: 2px; */
+  left: 0;
 }
