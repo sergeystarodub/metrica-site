@@ -40,6 +40,32 @@
   text-transform: uppercase;
 }
 
+.service-item__price {
+  position: absolute;
+  left: 30px;
+  top: 31.51px;
+  padding: 5px 22px 5px 20px;
+  background-color: #ad1818;
+  border-radius: 5px;
+  /* чтобы при сужении экрана текст был по центру */
+  text-align: center;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.service-item__price_sizes-lowerleft {
+  left: 32px;
+  top: 33.85px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.service-item__price_sizes-lowerright {
+  top: 33.85px;
+  padding-left: 21px;
+  padding-right: 21px;
+}
+
 .service-item__image-wrapper {
   margin-bottom: 24.94px;
   /* margin-bottom: 15px; */
