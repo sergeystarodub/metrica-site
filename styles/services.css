@@ -9,6 +9,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 80.7px;
+  margin-bottom: 103.88px;
 }
 
 .service-item {
@@ -118,4 +119,26 @@
   /* для первого макета десктоп */
   /* left: 2px; */
   left: 0;
+}
+
+.services_btn {
+  display: block;
+  width: 100%;
+  padding: 55px 0;
+  border: 1px solid #ad1818;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 41px;
+  background-color: #ad1818;
+  color: #fff;
+  cursor: pointer;
+}
+
+.services_btn:hover {
+  background-color: #fff;
+  color: #ad1818;
+  border: 1px solid #ad1818;
 }
