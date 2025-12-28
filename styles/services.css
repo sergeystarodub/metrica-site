@@ -142,3 +142,42 @@
   color: #ad1818;
   border: 1px solid #ad1818;
 }
+
+@media (max-width: 1199px) {
+  .services {
+    padding-bottom: 120px;
+  }
+
+  .services__title {
+    margin-bottom: 30px;
+    /* после pixel perfect про padding */
+    padding-left: 4px;
+  }
+
+  .service-list {
+    row-gap: 80px;
+    margin-bottom: 80px;
+  }
+
+  .service-item {
+    width: calc(50% - 5px);
+  }
+
+  .service-item__image-wrapper {
+    margin-bottom: 15px;
+    height: 315px;
+  }
+
+  .service-item__image-wrapper_bottom-first-column,
+  .service-item__image-wrapper_bottom-second-column {
+    margin-bottom: 14px;
+  }
+
+  .service-item__desc {
+    font-size: 25px;
+    line-height: 34px;
+  }
+}
+
+@media (max-width: 767px) {
+}
