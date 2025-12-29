@@ -163,6 +163,33 @@
     width: calc(50% - 5px);
   }
 
+  .service-item__price {
+    left: 32px;
+    top: 31px;
+    padding: 7px 26px 6px 27px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .service-item__price_sizes-lowerleft {
+    left: 30px;
+    top: 32px;
+    /* padding-right: 25px; */
+    /* после pixel perfect */
+    padding-right: 29px;
+    padding-left: 26px;
+  }
+
+  .service-item__price_sizes-lowerright {
+    /* left: 32px наследуется от service-item__price*/
+    top: 32px;
+    padding-left: 29px;
+    /* padding-right: 29px; */
+    /* после pixel perfect  */
+    padding-right: 30px;
+    
+  }
+
   .service-item__image-wrapper {
     margin-bottom: 15px;
     height: 315px;
@@ -176,6 +203,18 @@
   .service-item__desc {
     font-size: 25px;
     line-height: 34px;
+  }
+
+  .service-item__indent-wrapper {
+    padding-left: 0;
+  }
+
+  .service-item__indent-wrapper_large-left-padding {
+    padding-left: 3px;
+  }
+
+  .services_btn {
+    padding: 56px 0 54px 0;
   }
 }
 
