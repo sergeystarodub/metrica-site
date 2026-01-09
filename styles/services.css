@@ -41,30 +41,74 @@
   text-transform: uppercase;
 }
 
-.service-item__price {
+/* сделал так раньше - сейчас по другому смотри урок 11 */
+/* закоментирванные блоки ниже были раньше - первый вариант */
+/* .service-item__price {
   position: absolute;
   left: 30px;
   top: 31.51px;
   padding: 5px 22px 5px 20px;
   background-color: #ad1818;
   border-radius: 5px;
-  /* чтобы при сужении экрана текст был по центру */
+  чтобы при сужении экрана текст был по центру
   text-align: center;
+  font-size: 22px;
+  line-height: 30px;
+} */
+
+.price-label-wrapper {
+  position: absolute;
+  left: 30px;
+  top: 31.51px;
+}
+
+.price-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-right - после pixel perfect */
+  padding-right: 2px;
+  width: 163px;
+  height: 40px;
+  background-color: #ad1818;
+  border-radius: 5px;
+}
+
+.price {
   font-size: 22px;
   line-height: 30px;
 }
 
-.service-item__price_sizes-lowerleft {
+/* .service-item__price_sizes-lowerleft {
   left: 32px;
   top: 33.85px;
   padding-left: 20px;
   padding-right: 20px;
+} */
+
+.price-label-wrapper_sizes-lowerleft {
+  left: 32px;
+  top: 33.85px;
 }
 
-.service-item__price_sizes-lowerright {
+.price-label_sizes-lowerleft {
+  padding-right: 0;
+  width: 193px;
+}
+
+/* .service-item__price_sizes-lowerright {
   top: 33.85px;
   padding-left: 21px;
   padding-right: 21px;
+} */
+
+.price-label-wrapper_sizes-lowerright {
+  top: 33.85px;
+}
+
+.price-label_sizes-lowerright {
+  padding-right: 0;
+  width: 211px;
 }
 
 .service-item__image-wrapper {
@@ -187,7 +231,6 @@
     /* padding-right: 29px; */
     /* после pixel perfect  */
     padding-right: 30px;
-    
   }
 
   .service-item__image-wrapper {
