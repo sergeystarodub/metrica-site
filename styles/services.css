@@ -207,30 +207,71 @@
     width: calc(50% - 5px);
   }
 
-  .service-item__price {
+  /* .service-item__price {
     left: 32px;
     top: 31px;
     padding: 7px 26px 6px 27px;
     font-size: 20px;
     line-height: 27px;
-  }
+  } */
 
-  .service-item__price_sizes-lowerleft {
+  /* .service-item__price_sizes-lowerleft {
     left: 30px;
     top: 32px;
-    /* padding-right: 25px; */
-    /* после pixel perfect */
+    закоментить
+    padding-right: 25px;
+    после pixel perfect
     padding-right: 29px;
     padding-left: 26px;
   }
-
-  .service-item__price_sizes-lowerright {
-    /* left: 32px наследуется от service-item__price*/
+ */
+  /* .service-item__price_sizes-lowerright {
+    left: 32px наследуется от service-item__price
     top: 32px;
     padding-left: 29px;
-    /* padding-right: 29px; */
-    /* после pixel perfect  */
+    закоментить
+    padding-right: 29px;
+    после pixel perfect 
     padding-right: 30px;
+  } */
+
+  .price-label-wrapper {
+    left: 32px;
+    top: 31px;
+  }
+
+  .price-label {
+    /* после pixel perfect */
+    padding-top: 1px;
+    padding-left: 1px;
+    padding-right: 0;
+  }
+
+  .price {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .price-label-wrapper_sizes-lowerleft {
+    left: 30px;
+    top: 32px;
+  }
+
+  .price-label_sizes-lowerleft {
+    /* после pixel perfect */
+    padding-right: 2px;
+    padding-left: 0;
+    width: 194px;
+  }
+
+  .price-label-wrapper_sizes-lowerright {
+    /* left: 32px наследуется от price-label-wrapper */
+    top: 32px;
+  }
+
+  .price-label_sizes-lowerright {
+    /* после pixel perfect */
+    padding-left: 0;
   }
 
   .service-item__image-wrapper {
