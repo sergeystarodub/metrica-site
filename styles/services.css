@@ -324,35 +324,88 @@
     width: 100%;
   }
 
-  .service-item__price {
-    /* left: 24px;
-    top: 23px; */
-    /* после pixel perfect */
+  /* .service-item__price {
+    закоментить
+    left: 24px;
+    top: 23px;
+    после pixel perfect
     left: 25px;
     top: 22px;
     padding: 5px 23px 6px 24px;
     border-radius: 4px;
     font-size: 14px;
     line-height: 19px;
+  } */
+
+  /* .service-item__price_sizes-lowerleft {
+    закоментить
+    left: 22px;
+    top: 24px;
+    после pixel perfect
+    left: 23px;
+    top: 23px;
+    закоментить
+    padding-right: 24px;
+    padding-right: 26px;
+    padding-left: 24px;
+  } */
+
+  /* .service-item__price_sizes-lowerright {
+    left: 27px;
+    top: 24px;
+    padding-left: 26px;
+    padding-right: 26px;
+  } */
+
+  .price-label-wrapper {
+    /* left: 24px;
+    top: 23px; */
+    /* после pixel perfect */
+    left: 25px;
+    top: 22px;
   }
 
-  .service-item__price_sizes-lowerleft {
+  .price-label {
+    /* после pixel perfect */
+    padding-top: 0;
+    padding-bottom: 1px;
+    width: 124px;
+    height: 30px;
+    border-radius: 4px;
+  }
+
+  .price {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .price-label-wrapper_sizes-lowerleft {
     /* left: 22px;
     top: 24px; */
     /* после pixel perfect */
     left: 23px;
     top: 23px;
-    /* padding-right: 24px; */
-    padding-right: 26px;
-    padding-left: 24px;
   }
 
-  .service-item__price_sizes-lowerright {
+  .price-label_sizes-lowerleft {
+    /* после pixel perfect */
+    padding-right: 2px;
+    width: 148px;
+  }
+
+  .price-label-wrapper_sizes-lowerright {
     left: 27px;
     top: 24px;
-    padding-left: 26px;
-    padding-right: 26px;
   }
+
+  .price-label_sizes-lowerright {
+    /* после pixel perfect */
+    padding-top: 1px;
+    padding-bottom: 0;
+    padding-right: 2px;
+    width: 160px;
+  }
+
 
   .service-item__image-wrapper {
     margin-bottom: 10px;
