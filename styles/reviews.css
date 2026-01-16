@@ -1,56 +1,99 @@
 .reviews {
-    padding: 150px 0 150px;
-    color: #000;
+  padding: 150px 0 150px;
+  color: #000;
 }
 
 .reviews__title {
-    margin-bottom: 30px;
-    font-size: 18px;
-    line-height: 25px;
-    text-transform: uppercase;
-    color: #121212;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #121212;
 }
 
 .reviews__row-wrapper {
-    display: flex;
-    flex-direction: column;
-    row-gap: 80px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
 }
 
 .reviews__row {
-    display: flex;
-    /* пока пробую если не получится переделать у 2-ого отзыва справа от контейнера долженбыть на десктопе отступ */
-    /* закоментил - так сделать в tablet там справа отступа нет */
-    /* justify-content: space-between; */
-    justify-content: flex-start;
-    column-gap: 49px;
+  display: flex;
+  /* пока пробую если не получится переделать у 2-ого отзыва справа от контейнера долженбыть на десктопе отступ */
+  /* закоментил - так сделать в tablet там справа отступа нет */
+  /* justify-content: space-between; */
+  justify-content: flex-start;
+  column-gap: 49px;
 }
 
 .reviews__col {
-    width: calc(50% - 45.5px);
+  width: calc(50% - 45.5px);
 }
 
 .reviews__col_big {
-    width: 861px;
-    /* придумал вариант но пока закоменчу */
-    /* width: calc(100% - 290px); */
+  width: 861px;
+  /* придумал вариант но пока закоменчу */
+  /* width: calc(100% - 290px); */
 }
 
 .reviews-item {
-    width: 100%;
-    /* потом закоментить бордер */
-    /* border: 1px solid red; */
+  width: 100%;
+  /* потом закоментить бордер */
+  /* border: 1px solid red; */
 }
 
 .reviews-item__title {
-    margin-bottom: 14px;
-    font-size: 45px;
-    line-height: 61px;
+  margin-bottom: 14px;
+  font-size: 45px;
+  line-height: 61px;
 }
 
 .reviews-item__text {
-    /* пока закоментил может быть не нужно - и так занимает весь родительский элемент как блочный тег*/
-    /* max-width: 530px; */
-    font-size: 22px;
-    line-height: 30px;
+  /* пока закоментил может быть не нужно - и так занимает весь родительский элемент как блочный тег*/
+  /* max-width: 530px; */
+  font-size: 22px;
+  line-height: 30px;
+}
+
+@media (max-width: 1199px) {
+  .reviews {
+    padding: 120px 0 120px;
+  }
+
+  .reviews__title {
+    /* после pixel perfect */
+    padding-left: 2px;
+  }
+
+  .reviews__row {
+    justify-content: space-between;
+    column-gap: 0;
+  }
+
+  .reviews__col {
+    width: calc(50% - 5px);
+  }
+
+  .reviews__col_big {
+    width: 694px;
+  }
+
+  /* после pixel perfect добавил модификатор reviews-item_indent-top */
+  .reviews-item_indent-top {
+    padding-top: 4px;
+  }
+
+  .reviews-item__title {
+    margin-bottom: 25px;
+    font-size: 35px;
+    line-height: 48px;
+  }
+
+  .reviews-item__text {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width: 767px) {
 }
