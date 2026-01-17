@@ -96,4 +96,42 @@
 }
 
 @media (max-width: 767px) {
+  .reviews {
+    padding: 80px 0 80px;
+  }
+
+  .reviews__title {
+    margin-bottom: 22px;
+    /* после pixel perfect */
+    padding-left: 0;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .reviews__row {
+    flex-direction: column;
+    /* row-gap: 80px; */
+    /* после pixel perfect */
+    row-gap: 73px;
+  }
+
+  .reviews__col,
+  .reviews__col_big {
+    width: 100%;
+  }
+
+  .reviews-item_indent-top {
+    padding-top: 0;
+  }
+
+  .reviews-item__title {
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+  .reviews-item__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
