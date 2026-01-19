@@ -46,6 +46,8 @@
   margin-bottom: 14px;
   font-size: 45px;
   line-height: 61px;
+  /* после pixel perfect */
+  position: relative;
 }
 
 .reviews-item__text {
@@ -53,6 +55,36 @@
   /* max-width: 530px; */
   font-size: 22px;
   line-height: 30px;
+  /* после pixel perfect */
+  position: relative;
+}
+
+/* модификаторы после pixel perfect */
+/* отзыв Ксения */
+.reviews-item__title_size-offset-left-review {
+  left: -4px;
+}
+
+.reviews-item__text_size-offset-left-review {
+  left: -1px;
+}
+
+/* отзыв Регина */
+.reviews-item__title_size-offset-right-review {
+  left: 0;
+}
+
+.reviews-item__text_size-offset-right-review {
+  left: 0;
+}
+
+/* отзыв Яна */
+.reviews-item__title_size-offset-lower-review {
+  left: -2px;
+}
+
+.reviews-item__text_size-offset-lower-review {
+  left: 0;
 }
 
 @media (max-width: 1199px) {
@@ -92,6 +124,25 @@
   .reviews-item__text {
     font-size: 20px;
     line-height: 27px;
+  }
+
+  /* модификаторы после pixel perfect */
+  /* отзыв Ксения */
+  .reviews-item__title_size-offset-left-review {
+    left: -2px;
+  }
+
+  .reviews-item__text_size-offset-left-review {
+    left: 1px;
+  }
+
+  /* отзыв Яна */
+  .reviews-item__title_size-offset-lower-review {
+    left: -1px;
+  }
+
+  .reviews-item__text_size-offset-lower-review {
+    left: 1px;
   }
 }
 
@@ -133,5 +184,17 @@
   .reviews-item__text {
     font-size: 16px;
     line-height: 22px;
+  }
+
+  /* модификаторы после pixel perfect */
+  /* отзыв Ксения */
+
+  .reviews-item__text_size-offset-left-review {
+    left: 0;
+  }
+
+  /* отзыв Яна */
+  .reviews-item__title_size-offset-lower-review {
+    left: 0;
   }
 }
