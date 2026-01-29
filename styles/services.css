@@ -165,7 +165,7 @@
   left: 0;
 }
 
-.services_btn {
+.services__btn {
   display: block;
   width: 100%;
   padding: 55px 0;
@@ -181,7 +181,7 @@
   cursor: pointer;
 }
 
-.services_btn:hover {
+.services__btn:hover {
   background-color: #fff;
   color: #ad1818;
   border: 1px solid #ad1818;
@@ -297,7 +297,7 @@
     padding-left: 3px;
   }
 
-  .services_btn {
+  .services__btn {
     padding: 56px 0 54px 0;
   }
 }
@@ -435,7 +435,7 @@
     padding-left: 3px;
   }
 
-  .services_btn {
+  .services__btn {
     /* padding: 36px 0 35px 0; */
     /* после pixel perfect */
     padding: 37px 0 34px 0;
