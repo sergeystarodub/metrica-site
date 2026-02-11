@@ -1,24 +1,46 @@
-.gallery {
-  /* position: relative;
-  height: 717px; */
+/* .gallery {
+  
   width: 100%;
   background-image: url(../resources/fullscreen-image/full-image.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-}
+} */
 
-.gallery__desc {
+/* .gallery__desc {
   position: absolute;
   bottom: 60px;
   width: 443px;
   font-size: 30px;
   line-height: 41px;
   color: #ffffff;
-}
+} */
 
 /* сделал так чтобы при наведении вбраузере отображались границы container иначе gallery__desc вырывается из потока и у container высота = 0*/
-.gallery__box {
+/* .gallery__box {
   position: relative;
   height: 717px;
+} */
+
+/* потом наверху удалить */
+.gallery {
+  position: relative;
+  /* color: #fff; */
+  /* пока задал черный цвет чтобы было видно - потом удалить */
+  color: black;
 }
+
+.gallery__title-wrapper {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  top: 67px;
+}
+
+.gallery__title {
+  font-size: 22px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+
