@@ -4,15 +4,26 @@
   color: #ffffff;
 }
 
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 80.7px;
+  margin-bottom: 103.88px;
+}
+
 .service-item {
-  margin-bottom: 60px;
+  /* не нужно так как применяю флексбокс - потом все что не нужно удалить */
+  /* margin-bottom: 60px; */
+  width: calc(50% - 5.5px);
   /* для pixel perfect - чтобы спозиционировать по макету */
   position: relative;
 }
 
-.service-item:nth-last-child(1) {
+/* не нужно так как применяю флексбокс */
+/* .service-item:nth-last-child(1) {
   margin-bottom: 0;
-}
+} */
 
 /* еще один вариант обнуления отступа у последнего элемента в ul - есть пробел между :  */
 /* .service-list :nth-last-child(1) {
@@ -20,7 +31,9 @@
 } */
 
 .services__title {
-  margin-bottom: 34px;
+  /* было раньше в первом макете */
+  /* margin-bottom: 34px; */
+  margin-bottom: 29.93px;
   /* после pixel perfect про padding */
   padding-left: 2px;
   font-size: 18px;
@@ -28,9 +41,89 @@
   text-transform: uppercase;
 }
 
+/* сделал так раньше - сейчас по другому смотри урок 11 */
+/* закоментирванные блоки ниже были раньше - первый вариант */
+/* .service-item__price {
+  position: absolute;
+  left: 30px;
+  top: 31.51px;
+  padding: 5px 22px 5px 20px;
+  background-color: #ad1818;
+  border-radius: 5px;
+  чтобы при сужении экрана текст был по центру
+  text-align: center;
+  font-size: 22px;
+  line-height: 30px;
+} */
+
+.price-label-wrapper {
+  position: absolute;
+  left: 30px;
+  top: 31.51px;
+}
+
+.price-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-right - после pixel perfect */
+  padding-right: 2px;
+  width: 163px;
+  height: 40px;
+  background-color: #ad1818;
+  border-radius: 5px;
+}
+
+.price {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+/* .service-item__price_sizes-lowerleft {
+  left: 32px;
+  top: 33.85px;
+  padding-left: 20px;
+  padding-right: 20px;
+} */
+
+.price-label-wrapper_sizes-lowerleft {
+  left: 32px;
+  top: 33.85px;
+}
+
+.price-label_sizes-lowerleft {
+  padding-right: 0;
+  width: 193px;
+}
+
+/* .service-item__price_sizes-lowerright {
+  top: 33.85px;
+  padding-left: 21px;
+  padding-right: 21px;
+} */
+
+.price-label-wrapper_sizes-lowerright {
+  top: 33.85px;
+}
+
+.price-label_sizes-lowerright {
+  padding-right: 0;
+  width: 211px;
+}
+
 .service-item__image-wrapper {
-  margin-bottom: 15px;
-  height: 270px;
+  margin-bottom: 24.94px;
+  /* margin-bottom: 15px; */
+  /* height: 270px; */
+  height: 388.03px;
+}
+
+.service-item__image-wrapper_bottom-first-column {
+  margin-bottom: 25.82px;
+}
+
+.service-item__image-wrapper_bottom-second-column {
+  margin-bottom: 25.94px;
 }
 .service-item__image {
   display: block;
@@ -41,7 +134,9 @@
 
 .service-item__desc {
   font-size: 30px;
-  line-height: 41px;
+  line-height: 40px;
+  /* для первого макета десктоп */
+  /* line-height: 41px; */
   /* не стал указывать-ширина здесь не критична */
   /* width: 541px; */
   /* можно было указать здесь если не указывать width: 541px*/
@@ -53,10 +148,301 @@
 }
 
 /* для pixel perfect */
+.service-item__indent-wrapper_large-left-padding {
+  padding-left: 5px;
+}
+
+/* для pixel perfect */
 .service-item__position-onepx {
-  left: 1px;
+  /* для первого макета десктоп */
+  /* left: 1px; */
+  left: 0;
 }
 
 .service-item__position-twopx {
-  left: 2px;
+  /* для первого макета десктоп */
+  /* left: 2px; */
+  left: 0;
+}
+
+.services__btn {
+  display: block;
+  width: 100%;
+  padding: 55px 0;
+  border: 1px solid #ad1818;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 41px;
+  background-color: #ad1818;
+  color: #fff;
+  cursor: pointer;
+}
+
+.services__btn:hover {
+  background-color: #fff;
+  color: #ad1818;
+  border: 1px solid #ad1818;
+}
+
+@media (max-width: 1199px) {
+  .services {
+    padding-bottom: 120px;
+  }
+
+  .services__title {
+    margin-bottom: 30px;
+    /* после pixel perfect про padding */
+    padding-left: 4px;
+  }
+
+  .service-list {
+    row-gap: 80px;
+    margin-bottom: 80px;
+  }
+
+  .service-item {
+    width: calc(50% - 5px);
+  }
+
+  /* .service-item__price {
+    left: 32px;
+    top: 31px;
+    padding: 7px 26px 6px 27px;
+    font-size: 20px;
+    line-height: 27px;
+  } */
+
+  /* .service-item__price_sizes-lowerleft {
+    left: 30px;
+    top: 32px;
+    закоментить
+    padding-right: 25px;
+    после pixel perfect
+    padding-right: 29px;
+    padding-left: 26px;
+  }
+ */
+  /* .service-item__price_sizes-lowerright {
+    left: 32px наследуется от service-item__price
+    top: 32px;
+    padding-left: 29px;
+    закоментить
+    padding-right: 29px;
+    после pixel perfect 
+    padding-right: 30px;
+  } */
+
+  .price-label-wrapper {
+    left: 32px;
+    top: 31px;
+  }
+
+  .price-label {
+    /* после pixel perfect */
+    padding-top: 1px;
+    padding-left: 1px;
+    padding-right: 0;
+  }
+
+  .price {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .price-label-wrapper_sizes-lowerleft {
+    left: 30px;
+    top: 32px;
+  }
+
+  .price-label_sizes-lowerleft {
+    /* после pixel perfect */
+    padding-right: 2px;
+    padding-left: 0;
+    width: 194px;
+  }
+
+  .price-label-wrapper_sizes-lowerright {
+    /* left: 32px наследуется от price-label-wrapper */
+    top: 32px;
+  }
+
+  .price-label_sizes-lowerright {
+    /* после pixel perfect */
+    padding-left: 0;
+  }
+
+  .service-item__image-wrapper {
+    margin-bottom: 15px;
+    height: 315px;
+  }
+
+  .service-item__image-wrapper_bottom-first-column,
+  .service-item__image-wrapper_bottom-second-column {
+    margin-bottom: 14px;
+  }
+
+  .service-item__desc {
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+  .service-item__indent-wrapper {
+    padding-left: 0;
+  }
+
+  .service-item__indent-wrapper_large-left-padding {
+    padding-left: 3px;
+  }
+
+  .services__btn {
+    padding: 56px 0 54px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .services {
+    padding: 80px 0 80px;
+    /* после pixel perfect - если делать так то надо править другие размеры тоже*/
+    /* padding: 79px 0 80px; */
+  }
+
+  .services__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .service-list {
+    row-gap: 60px;
+    margin-bottom: 60px;
+  }
+
+  .service-item {
+    width: 100%;
+  }
+
+  /* .service-item__price {
+    закоментить
+    left: 24px;
+    top: 23px;
+    после pixel perfect
+    left: 25px;
+    top: 22px;
+    padding: 5px 23px 6px 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 19px;
+  } */
+
+  /* .service-item__price_sizes-lowerleft {
+    закоментить
+    left: 22px;
+    top: 24px;
+    после pixel perfect
+    left: 23px;
+    top: 23px;
+    закоментить
+    padding-right: 24px;
+    padding-right: 26px;
+    padding-left: 24px;
+  } */
+
+  /* .service-item__price_sizes-lowerright {
+    left: 27px;
+    top: 24px;
+    padding-left: 26px;
+    padding-right: 26px;
+  } */
+
+  .price-label-wrapper {
+    /* left: 24px;
+    top: 23px; */
+    /* после pixel perfect */
+    left: 25px;
+    top: 22px;
+  }
+
+  .price-label {
+    /* после pixel perfect */
+    padding-top: 0;
+    padding-bottom: 1px;
+    width: 124px;
+    height: 30px;
+    border-radius: 4px;
+  }
+
+  .price {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .price-label-wrapper_sizes-lowerleft {
+    /* left: 22px;
+    top: 24px; */
+    /* после pixel perfect */
+    left: 23px;
+    top: 23px;
+  }
+
+  .price-label_sizes-lowerleft {
+    /* после pixel perfect */
+    padding-right: 2px;
+    width: 148px;
+  }
+
+  .price-label-wrapper_sizes-lowerright {
+    left: 27px;
+    top: 24px;
+  }
+
+  .price-label_sizes-lowerright {
+    /* после pixel perfect */
+    padding-top: 1px;
+    padding-bottom: 0;
+    padding-right: 2px;
+    width: 160px;
+  }
+
+
+  .service-item__image-wrapper {
+    margin-bottom: 10px;
+    height: 240px;
+  }
+
+  .service-item__desc {
+    font-size: 18px;
+    line-height: 24px;
+    /* так не сходится при pixel perfect */
+    /* line-height: 25px; */
+  }
+
+  .service-item__desc_size-row {
+    line-height: 23px;
+  }
+
+  .service-item__indent-wrapper {
+    padding-left: 1px;
+  }
+
+  .service-item__indent-wrapper_size-zero {
+    padding-left: 0;
+  }
+
+  .service-item__indent-wrapper_large-left-padding {
+    padding-left: 3px;
+  }
+
+  .services__btn {
+    /* padding: 36px 0 35px 0; */
+    /* после pixel perfect */
+    padding: 37px 0 34px 0;
+    border-radius: 4px;
+    font-size: 22px;
+    line-height: 27px;
+    /* так не сходится при pixel perfect */
+    /* line-height: 30px; */
+  }
 }

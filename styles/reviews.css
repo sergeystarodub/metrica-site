@@ -1,0 +1,212 @@
+.reviews {
+  padding: 150px 0 150px;
+  color: #000;
+}
+
+.reviews__title {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #121212;
+}
+
+.reviews__row-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+}
+
+.reviews__row {
+  display: flex;
+  /* пока пробую если не получится переделать у 2-ого отзыва справа от контейнера долженбыть на десктопе отступ */
+  /* закоментил - так сделать в tablet там справа отступа нет */
+  /* justify-content: space-between; */
+  justify-content: flex-start;
+  column-gap: 49px;
+}
+
+.reviews__col {
+  width: calc(50% - 45.5px);
+}
+
+.reviews__col_big {
+  width: 861px;
+  /* придумал вариант но пока закоменчу */
+  /* width: calc(100% - 290px); */
+}
+
+.reviews-item {
+  width: 100%;
+  /* потом закоментить бордер */
+  /* border: 1px solid red; */
+}
+
+.reviews-item__title {
+  margin-bottom: 14px;
+  font-size: 45px;
+  line-height: 61px;
+  /* после pixel perfect */
+  position: relative;
+}
+
+.reviews-item__text {
+  margin-bottom: 30px;
+  /* пока закоментил может быть не нужно - и так занимает весь родительский элемент как блочный тег*/
+  /* max-width: 530px; */
+  font-size: 22px;
+  line-height: 30px;
+  /* после pixel perfect */
+  position: relative;
+}
+
+.reviews-item__text:last-child {
+  margin-bottom: 0;
+}
+
+/* модификатор для отступа - красной строки в отзывах Регина и Яна */
+.reviews-item__text_red-line {
+  text-indent: 3px;
+}
+
+/* модификаторы после pixel perfect */
+/* отзыв Ксения */
+.reviews-item__title_size-offset-left-review {
+  left: -4px;
+}
+
+.reviews-item__text_size-offset-left-review {
+  left: -1px;
+}
+
+/* отзыв Регина */
+.reviews-item__title_size-offset-right-review {
+  left: 0;
+}
+
+.reviews-item__text_size-offset-right-review {
+  left: 0;
+}
+
+/* отзыв Яна */
+.reviews-item__title_size-offset-lower-review {
+  left: -2px;
+}
+
+.reviews-item__text_size-offset-lower-review {
+  left: 0;
+}
+
+@media (max-width: 1199px) {
+  .reviews {
+    padding: 120px 0 120px;
+  }
+
+  .reviews__title {
+    /* после pixel perfect */
+    padding-left: 2px;
+  }
+
+  .reviews__row {
+    justify-content: space-between;
+    column-gap: 0;
+  }
+
+  .reviews__col {
+    width: calc(50% - 5px);
+  }
+
+  .reviews__col_big {
+    width: 694px;
+  }
+
+  /* после pixel perfect добавил модификатор reviews-item_indent-top */
+  .reviews-item_indent-top {
+    padding-top: 4px;
+  }
+
+  .reviews-item__title {
+    margin-bottom: 25px;
+    font-size: 35px;
+    line-height: 48px;
+  }
+
+  .reviews-item__text {
+    margin-bottom: 27px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  /* модификаторы после pixel perfect */
+  /* отзыв Ксения */
+  .reviews-item__title_size-offset-left-review {
+    left: -2px;
+  }
+
+  .reviews-item__text_size-offset-left-review {
+    left: 1px;
+  }
+
+  /* отзыв Яна */
+  .reviews-item__title_size-offset-lower-review {
+    left: -1px;
+  }
+
+  .reviews-item__text_size-offset-lower-review {
+    left: 1px;
+  }
+}
+
+@media (max-width: 767px) {
+  .reviews {
+    padding: 80px 0 80px;
+  }
+
+  .reviews__title {
+    margin-bottom: 22px;
+    /* после pixel perfect */
+    padding-left: 0;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .reviews__row {
+    flex-direction: column;
+    /* row-gap: 80px; */
+    /* после pixel perfect */
+    row-gap: 73px;
+  }
+
+  .reviews__col,
+  .reviews__col_big {
+    width: 100%;
+  }
+
+  .reviews-item_indent-top {
+    padding-top: 0;
+  }
+
+  .reviews-item__title {
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+  .reviews-item__text {
+    margin-bottom: 22px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  /* модификаторы после pixel perfect */
+  /* отзыв Ксения */
+
+  .reviews-item__text_size-offset-left-review {
+    left: 0;
+  }
+
+  /* отзыв Яна */
+  .reviews-item__title_size-offset-lower-review {
+    left: 0;
+  }
+}
