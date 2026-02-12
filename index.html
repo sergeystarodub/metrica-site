@@ -451,7 +451,32 @@
           </div>
         </div>
         <div class="gallery__slides">
-          <div class="gallery__slide gallery__slide_active"></div>
+          <div class="gallery__slide gallery__slide_active">
+            <div class="gallery-box">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="resources/gallery-image/gallery-image-1_mobile.png"
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="resources/gallery-image/gallery-image-1_tablet.png"
+                />
+                <img
+                  class="gallery-box__image"
+                  src="resources/gallery-image/gallery-image-1_desktop.png"
+                  alt="Большая кровать в центре комнаты"
+                />
+              </picture>
+              <div class="gallery-box__desc-wrapper">
+                <div class="container">
+                  <h3 class="gallery-box__desc">
+                    Проект Двухкомнтаной квартиры в ЖК Лесной Пейзаж
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="gallery__slide"></div>
           <div class="gallery__slide"></div>
           <div class="gallery__slide"></div>
