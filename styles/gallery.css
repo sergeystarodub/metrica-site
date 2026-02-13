@@ -68,8 +68,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  /* пока закоментил может быть не нужен */
-  /* object-fit: cover; */
+  object-fit: cover;
 }
 
 .gallery-box__desc-wrapper {
@@ -82,5 +81,39 @@
   max-width: 443px;
   font-size: 30px;
   line-height: 41px;
+}
 
+.gallery__controls-wrapper {
+  position: absolute;
+  bottom: 165.33px;
+  width: 100%;
+}
+
+.gallery__controls {
+  display: flex;
+  gap: 34.77px;
+}
+
+.gallery__control-prev,
+.gallery__control-next {
+  width: 19.62px;
+  height: 33.33px;
+  background-image: url("../resources/gallery-image/gallery-button-left_desktop.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  border: none;
+}
+
+.gallery__control-next {
+  transform: rotate(180deg);
+}
+
+.gallery__control-prev:hover {
+  opacity: 0.5;
+}
+
+.gallery__control-next:hover {
+  opacity: 0.5;
 }
