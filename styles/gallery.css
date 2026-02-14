@@ -77,6 +77,10 @@
   bottom: 60px;
 }
 
+.gallery-box__desc-wrapper_larger-indentation {
+  bottom: 101px;
+}
+
 .gallery-box__desc {
   max-width: 443px;
   font-size: 30px;
