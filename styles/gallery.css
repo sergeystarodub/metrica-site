@@ -121,3 +121,46 @@
 .gallery__control-next:hover {
   opacity: 0.5;
 }
+
+@media (max-width: 1199px) {
+  .gallery__title-wrapper {
+    /* top: 80px; */
+    /* после pixel perfect */
+    top: 79px;
+    padding-left: 36px;
+  }
+
+  .gallery__title {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .gallery__slides {
+    height: 536px;
+  }
+
+  .gallery-box__desc-wrapper {
+    bottom: 80px;
+    padding-left: 36px;
+  }
+
+  .gallery-box__desc-wrapper_larger-indentation {
+    /* после pixel perfect */
+    bottom: 114px;
+  }
+
+  .gallery-box__desc {
+    max-width: 377px;
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+  .gallery__controls-wrapper {
+    bottom: 155.33px;
+    padding-left: 37px;
+  }
+
+
+
+
+}
