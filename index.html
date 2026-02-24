@@ -494,11 +494,11 @@
                   alt="Желтое кресло в центре комнаты"
                 />
               </picture>
-              <div class="gallery-box__desc-wrapper gallery-box__desc-wrapper_larger-indentation">
+              <div
+                class="gallery-box__desc-wrapper gallery-box__desc-wrapper_larger-indentation"
+              >
                 <div class="container">
-                  <h3 class="gallery-box__desc">
-                    Проект гостиной в ЖК Маяк
-                  </h3>
+                  <h3 class="gallery-box__desc">Проект гостиной в ЖК Маяк</h3>
                 </div>
               </div>
             </div>
@@ -523,7 +523,8 @@
               <div class="gallery-box__desc-wrapper">
                 <div class="container">
                   <h3 class="gallery-box__desc">
-                    Визуализация кухни-гостиной <br> в частном доме
+                    Визуализация кухни-гостиной <br />
+                    в частном доме
                   </h3>
                 </div>
               </div>
@@ -591,8 +592,24 @@
       <section id="contacts-identifier" class="contacts">
         <div class="container">
           <h2 class="contacts__title">Контакты</h2>
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <div class="contacts-item__telephone-wrapper">
+                <!-- вставил пробел спомощью спецсимвола после pixel perfect -->
+                <a class="contacts-item__telephone" href="tel:+79358954535"
+                  >+7 935 &nbsp;895-45-35</a
+                >
+              </div>
+            </li>
+            <li class="contacts-item">
+              <div class="contacts-item__email-wrapper">
+                <a class="contacts-item__email" href="mailto:hello@mail.com"
+                  >hello@mail.com</a
+                >
+              </div>
+            </li>
+          </ul>
         </div>
-
       </section>
     </main>
 

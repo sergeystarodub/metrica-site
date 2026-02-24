@@ -77,10 +77,41 @@
   color: #121212;
 }
 
+.contacts-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* вместо column-gap: 104px - подобрал при pixel perfect */
+  column-gap: 54px;
+}
+
+.contacts-item {
+  width: calc(50% - 52px);
+}
+
+/* пробую */
+/* .contacts-item:last-child {
+  padding-right: 162px;
+} */
+
+
 .contacts__title {
+  margin-bottom: 64px;
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
+}
+
+.contacts-item__telephone-wrapper {
+  padding-top: 10px;
+}
+
+.contacts-item__telephone,
+.contacts-item__email {
+  font-size: 60px;
+  line-height: 60px;
+  text-decoration: none;
+  color: #121212;
 }
 
 
