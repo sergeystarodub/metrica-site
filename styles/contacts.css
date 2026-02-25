@@ -89,12 +89,6 @@
   width: calc(50% - 52px);
 }
 
-/* пробую */
-/* .contacts-item:last-child {
-  padding-right: 162px;
-} */
-
-
 .contacts__title {
   margin-bottom: 64px;
   font-size: 18px;
@@ -103,7 +97,40 @@
 }
 
 .contacts-item__telephone-wrapper {
+  position: relative;
   padding-top: 10px;
+}
+
+.contacts-item__email-wrapper {
+  position: relative;
+}
+
+.contacts-item__telephone-wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 86px;
+  left: -6px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../resources/contacts-icons/contacts-icons-phone_desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.contacts-item__email-wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 75px;
+  left: -1px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../resources/contacts-icons/contacts-icons-email_desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .contacts-item__telephone,
@@ -113,7 +140,3 @@
   text-decoration: none;
   color: #121212;
 }
-
-
-
-
