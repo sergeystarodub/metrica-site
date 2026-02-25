@@ -103,6 +103,8 @@
 
 .contacts-item__email-wrapper {
   position: relative;
+  /* чтобы hover работал только по этой ширине а не на всю ширину div */
+  width: 412px;
 }
 
 .contacts-item__telephone-wrapper::before {
@@ -131,6 +133,19 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  
+}
+
+.contacts-item__email-wrapper:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 4px;
+  width: 406px;
+  /* задал высоту чтобы было видно-2px взял из свойства border: 2px solid #121212 */
+  height: 2px;
+  background-color: #121212;
 }
 
 .contacts-item__telephone,
@@ -140,3 +155,13 @@
   text-decoration: none;
   color: #121212;
 }
+
+/* пробую - спросить у gpt как сделать чтобы при наведении все тускнели кроме иконки */
+.contacts-item__telephone:hover,
+.contacts-item__email-wrapper:hover::after,
+.contacts-item__email:hover {
+  opacity: 0.5;
+}
+
+
+
