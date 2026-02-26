@@ -99,6 +99,8 @@
 .contacts-item__telephone-wrapper {
   position: relative;
   padding-top: 10px;
+  /* чтобы hover работал только по этой ширине а не на всю ширину div */
+  width: 472px;
 }
 
 .contacts-item__email-wrapper {
@@ -157,17 +159,71 @@
   font-size: 60px;
   line-height: 60px;
   text-decoration: none;
-  color: #121212;
+  color: inherit;
 }
 
 /* пробую - спросить у gpt как сделать чтобы при наведении все тускнели кроме иконки */
-/* .contacts-item__telephone:hover,
-.contacts-item__email-wrapper:hover::after,
-.contacts-item__email:hover {
-  opacity: 0.5;
-} */
 
 .contacts-item__telephone-wrapper:hover,
 .contacts-item__email-wrapper:hover {
   opacity: 0.5;
+}
+
+@media (max-width: 1199px) {
+  .contacts {
+    padding: 120px 0 120px;
+  }
+
+  .contacts-list {
+    /* вместо column-gap: 114px - подобрал при pixel perfect */
+    column-gap: 63px;
+  }
+
+  .contacts-item {
+    width: calc(50% - 57px);
+  }
+
+  .contacts-item__telephone-wrapper {
+    /* чтобы hover работал только по этой ширине а не на всю ширину div */
+    width: 354px;
+    /* после pixel perfect */
+    padding-left: 2px;
+  }
+
+  .contacts-item__email-wrapper {
+    position: relative;
+    /* чтобы hover работал только по этой ширине а не на всю ширину div */
+    width: 309px;
+  }
+
+  .contacts-item__telephone-wrapper::before {
+    /* после pixel pefect */
+    bottom: 87px;
+    left: -4px;
+  }
+
+  .contacts-item__email-wrapper::before {
+    /* после pixel pefect */
+    bottom: 76px;
+    left: 0;
+  }
+
+  .contacts-item__email-wrapper:hover::after,
+  .contacts-item__telephone-wrapper:hover::after {
+    bottom: 1px;
+    left: 4px;
+    width: 305px;
+  }
+
+  .contacts-item__telephone-wrapper_long-line:hover::after {
+    width: 354px;
+  }
+
+  .contacts-item__telephone,
+  .contacts-item__email {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 767px) {
 }
