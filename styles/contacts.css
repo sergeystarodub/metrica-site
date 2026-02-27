@@ -191,7 +191,6 @@
   }
 
   .contacts-item__email-wrapper {
-    position: relative;
     /* чтобы hover работал только по этой ширине а не на всю ширину div */
     width: 309px;
   }
@@ -226,4 +225,66 @@
 }
 
 @media (max-width: 767px) {
+  .contacts {
+    padding: 80px 0 80px;
+  }
+
+  .contacts-list {
+    row-gap: 58px;
+  }
+
+  .contacts-item {
+    width: 100%;
+  }
+
+  .contacts__title {
+    margin-bottom: 58px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .contacts-item__telephone-wrapper {
+    /* чтобы hover работал только по этой ширине а не на всю ширину div */
+    width: 276px;
+    padding-top: 0;
+    padding-left: 0;
+    margin-left: -2px;
+  }
+
+  .contacts-item__email-wrapper {
+    /* чтобы hover работал только по этой ширине а не на всю ширину div */
+    width: 240px;
+    margin-left: -2px;
+  }
+
+  .contacts-item__telephone-wrapper::before {
+    bottom: 67px;
+    left: -2px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../resources/contacts-icons/contacts-icons-phone_mobile.png");
+  }
+
+  .contacts-item__email-wrapper::before {
+    bottom: 67px;
+    left: 1px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../resources/contacts-icons/contacts-icons-email_mobile.png");
+  }
+
+  .contacts-item__email-wrapper:hover::after,
+  .contacts-item__telephone-wrapper:hover::after {
+    width: 305px;
+  }
+
+  .contacts-item__telephone-wrapper_long-line:hover::after {
+    width: 354px;
+  }
+
+  .contacts-item__telephone,
+  .contacts-item__email {
+    font-size: 35px;
+    line-height: 46px;
+  }
 }
