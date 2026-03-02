@@ -67,3 +67,49 @@
   opacity: 0.5;
 }
  */
+
+.footer {
+  padding: 60px 0 30px;
+  background-color: #121212;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 87px;
+}
+
+.footer-nav-menu {
+  width: 450px;
+  /* border: 1px solid red; */
+}
+
+.footer-nav-menu__list {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer-nav-menu__link {
+  display: block;
+  /* пока закоментил вроде есть line-height */
+  /* height: 25px; */
+  line-height: 25px;
+  /* text-align: center; */
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  /* border: 1px solid red; */
+}
+
+.footer-nav-menu__link:hover {
+  opacity: 0.5;
+}
+
+.footer__copyright {
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+  opacity: 0.5;
+}
