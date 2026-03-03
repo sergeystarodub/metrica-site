@@ -88,7 +88,6 @@
 .footer-nav-menu__list {
   display: flex;
   justify-content: space-between;
-
 }
 
 .footer-nav-menu__link {
@@ -112,4 +111,33 @@
   line-height: 27px;
   color: #ffffff;
   opacity: 0.5;
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 30px 0 26px;
+  }
+
+  .footer-inner {
+    row-gap: 41px;
+  }
+
+  .footer-nav-menu {
+    width: 281px;
+    /* border: 1px solid red; */
+  }
+
+  .footer-nav-menu__link {
+    font-size: 12px;
+    line-height: 16px;
+    /* border: 1px solid red; */
+  }
+
+  .footer__copyright {
+    font-size: 13px;
+    line-height: 18px;
+  }
 }
