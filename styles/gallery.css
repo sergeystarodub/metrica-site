@@ -89,36 +89,46 @@
 
 .gallery__controls-wrapper {
   position: absolute;
-  bottom: 165.33px;
+  /* bottom: 165.33px; */
+  /* так как стрелки сделал 40 на 40 */
+  bottom: 162px;
   width: 100%;
 }
 
 .gallery__controls {
   display: flex;
-  gap: 34.77px;
+  gap: 14px;
+  /* gap: 34.77px; */
 }
 
 .gallery__control-prev,
 .gallery__control-next {
-  width: 19.62px;
-  height: 33.33px;
-  background-image: url("../resources/gallery-image/gallery-button-left_desktop.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: inherit;
+  /* width: 19.62px; */
+  /* height: 33.33px; */
+  /* поменял */
+  width: 40px;
+  height: 40px;
+  background: none;
   border: none;
+  /* чтобы не увеличивались стрелки закоментил */
+  /* background-size: contain; */
+  background-position: left;
+  background-repeat: no-repeat;
   cursor: pointer;
 }
 
+.gallery__control-prev {
+  background-image: url("../resources/gallery-image/gallery-button-left_desktop.png");
+}
+
 .gallery__control-next {
+  background-image: url("../resources/gallery-image/gallery-button-left_desktop.png");
   transform: rotate(180deg);
+  /* для правой стрелочки 40 на 40 - right так как поворачиваем на 180 градусов */
+  background-position: right;
 }
 
-.gallery__control-prev:hover {
-  opacity: 0.5;
-}
-
+.gallery__control-prev:hover,
 .gallery__control-next:hover {
   opacity: 0.5;
 }
@@ -128,10 +138,10 @@
     /* top: 80px; */
     /* после pixel perfect */
     top: 79px;
-    padding-left: 36px;
   }
 
   .gallery__title {
+    padding-left: 36px;
     font-size: 20px;
     line-height: 27px;
   }
@@ -142,7 +152,6 @@
 
   .gallery-box__desc-wrapper {
     bottom: 80px;
-    padding-left: 36px;
   }
 
   .gallery-box__desc-wrapper_larger-indentation {
@@ -151,13 +160,20 @@
   }
 
   .gallery-box__desc {
-    max-width: 377px;
+    padding-left: 36px;
+    /* max-width: 377px; */
+    /* 377 + 36 - ширина плюс паддинг чтобы влез текст */
+    max-width: 413px;
     font-size: 25px;
     line-height: 34px;
   }
 
   .gallery__controls-wrapper {
-    bottom: 155.33px;
+    /* bottom: 155.33px; */
+    bottom: 152px;
+  }
+
+  .gallery__controls {
     padding-left: 37px;
   }
 }
@@ -167,10 +183,10 @@
     /* top: 61px; */
     /* после pixel perfect */
     top: 60px;
-    padding-left: 0;
   }
 
   .gallery__title {
+    padding-left: 0;
     font-size: 14px;
     line-height: 19px;
   }
@@ -181,7 +197,6 @@
 
   .gallery-box__desc-wrapper {
     bottom: 60px;
-    padding-left: 0;
   }
 
   .gallery-box__desc-wrapper_larger-indentation {
@@ -190,27 +205,37 @@
   }
 
   .gallery-box__desc {
+    padding-left: 0;
     max-width: 287px;
     font-size: 19px;
     line-height: 26px;
   }
 
   .gallery__controls-wrapper {
-    bottom: 191.5px;
-    padding-left: 0;
+    /* bottom: 191.5px; */
+    bottom: 189px;
   }
 
   .gallery__controls {
+    padding-left: 0;
     gap: 0;
     justify-content: space-between;
   }
 
   .gallery__control-prev,
   .gallery__control-next {
-    width: 14.71px;
-    height: 25px;
+    /* width: 14.71px; */
+    /* height: 25px; */
+    width: 30px;
+    height: 30px;
+  }
+
+  .gallery__control-prev {
     background-image: url("../resources/gallery-image/gallery-button-left_mobile.png");
   }
 
-  
+  .gallery__control-next {
+    background-image: url("../resources/gallery-image/gallery-button-left_mobile.png");
+    background-position: left;
+  }
 }
