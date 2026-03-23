@@ -100,13 +100,17 @@
   position: relative;
   padding-top: 10px;
   /* чтобы hover работал только по этой ширине а не на всю ширину div */
-  width: 472px;
+  /* width: 472px уже не надо так не верно - чтобы не привязываться к фиксированным значениям */
+  /* width: 472px; */
+  display: inline-block;
 }
 
 .contacts-item__email-wrapper {
   position: relative;
   /* чтобы hover работал только по этой ширине а не на всю ширину div */
-  width: 412px;
+  /* width: 412px уже не надо так не верно - чтобы не привязываться к фиксированным значениям */
+  /* width: 412px; */
+  display: inline-block;
 }
 
 .contacts-item__telephone-wrapper::before {
@@ -144,16 +148,19 @@
   position: absolute;
   bottom: -10px;
   left: 4px;
-  width: 406px;
+  /* width: 406px - так не корректно - фиксированная величина */
+  /* width: 406px; */
+  width: 100%;
   /* задал высоту чтобы было видно-2px взял из свойства border: 2px solid #121212 */
   height: 2px;
   background-color: #121212;
 }
 
-.contacts-item__telephone-wrapper_long-line:hover::after {
+/* это уже не надо - потом удалить */
+/* .contacts-item__telephone-wrapper_long-line:hover::after {
   width: 465px;
 }
-
+ */
 .contacts-item__telephone,
 .contacts-item__email {
   font-size: 60px;
@@ -185,15 +192,20 @@
 
   .contacts-item__telephone-wrapper {
     /* чтобы hover работал только по этой ширине а не на всю ширину div */
-    width: 354px;
+    /* потом удалить */
+    /* width: 354px; */
     /* после pixel perfect */
     padding-left: 2px;
+    /* чтобы номер телефона не переносился частично на новую строку иначе едет иконка телефона*/
+    white-space: nowrap;
   }
 
-  .contacts-item__email-wrapper {
-    /* чтобы hover работал только по этой ширине а не на всю ширину div */
+  /* потои удалить */
+
+  /* .contacts-item__email-wrapper {
+    чтобы hover работал только по этой ширине а не на всю ширину div
     width: 309px;
-  }
+  } */
 
   .contacts-item__telephone-wrapper::before {
     /* после pixel pefect */
@@ -211,12 +223,14 @@
   .contacts-item__telephone-wrapper:hover::after {
     bottom: 1px;
     left: 4px;
-    width: 305px;
+    /* не надо - потом удалить */
+    /* width: 305px; */
   }
 
-  .contacts-item__telephone-wrapper_long-line:hover::after {
+  /* потом удалить */
+  /* .contacts-item__telephone-wrapper_long-line:hover::after {
     width: 354px;
-  }
+  } */
 
   .contacts-item__telephone,
   .contacts-item__email {
@@ -245,7 +259,8 @@
 
   .contacts-item__telephone-wrapper {
     /* чтобы hover работал только по этой ширине а не на всю ширину div */
-    width: 276px;
+    /* потом удалить */
+    /* width: 276px; */
     padding-top: 0;
     padding-left: 0;
     /* после pixel perfect */
@@ -254,7 +269,8 @@
 
   .contacts-item__email-wrapper {
     /* чтобы hover работал только по этой ширине а не на всю ширину div */
-    width: 240px;
+    /* потом удалить */
+    /* width: 240px; */
     /* после pixel perfect */
     margin-left: -2px;
   }
@@ -275,14 +291,15 @@
     background-image: url("../resources/contacts-icons/contacts-icons-email_mobile.png");
   }
 
-  .contacts-item__email-wrapper:hover::after,
+  /* потом удалить */
+  /* .contacts-item__email-wrapper:hover::after,
   .contacts-item__telephone-wrapper:hover::after {
     width: 236px;
-  }
+  } */
 
-  .contacts-item__telephone-wrapper_long-line:hover::after {
+  /* .contacts-item__telephone-wrapper_long-line:hover::after {
     width: 272px;
-  }
+  } */
 
   .contacts-item__telephone,
   .contacts-item__email {
