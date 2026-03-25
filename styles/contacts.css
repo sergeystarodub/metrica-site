@@ -186,9 +186,7 @@
 
 /* чтобы не тускнела иконка */
 .contacts-item__telephone:hover,
-.contacts-item__email:hover,
-.contacts-item__email-wrapper:hover::after,
-.contacts-item__telephone-wrapper:hover::after {
+.contacts-item__email:hover {
   opacity: 0.5;
 }
 
