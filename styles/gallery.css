@@ -116,6 +116,10 @@
   background-position: left;
   background-repeat: no-repeat;
   cursor: pointer;
+  /* чтобы стрелки на телефоне не подсвечивались синим при нажатии */
+  /* так не сработало */
+  /* background-color: transparent; */
+  -webkit-tap-highlight-color: transparent;
 }
 
 .gallery__control-prev {
@@ -132,6 +136,7 @@
 .gallery__control-prev:hover,
 .gallery__control-next:hover {
   opacity: 0.5;
+
 }
 
 @media (max-width: 1199px) {
