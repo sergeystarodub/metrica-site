@@ -444,6 +444,130 @@
           </div>
         </div>
       </section> -->
+      
+      <!-- Секция gallery -->
+      <section class="gallery">
+        <div class="gallery__title-wrapper">
+          <div class="container">
+            <p class="gallery__title">галерея проектов</p>
+          </div>
+        </div>
+        <div class="gallery__slides">
+          <div class="gallery__slide gallery__slide_active">
+            <div class="gallery-box">
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="resources/gallery-image/gallery-image-1_mobile.png"
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="resources/gallery-image/gallery-image-1_tablet.png"
+                />
+                <img
+                  class="gallery-box__image"
+                  src="resources/gallery-image/gallery-image-1_desktop.png"
+                  alt="Большая кровать в центре комнаты"
+                />
+              </picture>
+              <div class="gallery-box__desc-wrapper">
+                <div class="container">
+                  <p class="gallery-box__desc">
+                    Проект &nbsp;Двухкомнатной квартиры в ЖК Лесной Пейзаж
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery__slide">
+            <div class="gallery-box">
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="resources/gallery-image/gallery-image-2.png"
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="resources/gallery-image/gallery-image-2.png"
+                />
+                <img
+                  class="gallery-box__image"
+                  src="resources/gallery-image/gallery-image-2.png"
+                  alt="Желтое кресло в центре комнаты"
+                />
+              </picture>
+              <div
+                class="gallery-box__desc-wrapper gallery-box__desc-wrapper_larger-indentation"
+              >
+                <div class="container">
+                  <p class="gallery-box__desc">Проект гостиной в ЖК Маяк</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery__slide">
+            <div class="gallery-box">
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="resources/gallery-image/gallery-image-3.png"
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="resources/gallery-image/gallery-image-3.png"
+                />
+                <img
+                  class="gallery-box__image"
+                  src="resources/gallery-image/gallery-image-3.png"
+                  alt="Диван и кресло в комнате"
+                />
+              </picture>
+              <div class="gallery-box__desc-wrapper">
+                <div class="container">
+                  <p class="gallery-box__desc">
+                    Визуализация кухни-гостиной <br />
+                    в частном доме
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery__slide">
+            <div class="gallery-box">
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="resources/gallery-image/gallery-image-4.png"
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="resources/gallery-image/gallery-image-4.png"
+                />
+                <img
+                  class="gallery-box__image"
+                  src="resources/gallery-image/gallery-image-4.png"
+                  alt="Стол со стулом в комнате"
+                />
+              </picture>
+              <div class="gallery-box__desc-wrapper">
+                <div class="container">
+                  <p class="gallery-box__desc">
+                    Проект кухни в скандинавском стиле для ЖК Северный Ветер
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__controls-wrapper">
+          <div class="container">
+            <div class="gallery__controls">
+              <button class="gallery__control-prev"></button>
+              <button class="gallery__control-next"></button>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Секция contacts -->
       <!-- после того как раскоментирую - закоментить вставил пробел с помощью -->
@@ -465,6 +589,32 @@
           </div>
         </div>
       </section> -->
+
+      <!-- Секция contacts -->
+      <section id="contacts-identifier" class="contacts">
+        <div class="container">
+          <h2 class="contacts__title">Контакты</h2>
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <div
+                class="contacts-item__telephone-wrapper"
+              >
+                <!-- вставил пробел спомощью спецсимвола после pixel perfect -->
+                <a class="contacts-item__telephone" href="tel:+79358954535"
+                  >+7 935 &nbsp;895-45-35</a
+                >
+              </div>
+            </li>
+            <li class="contacts-item">
+              <div class="contacts-item__email-wrapper">
+                <a class="contacts-item__email" href="mailto:hello@mail.com"
+                  >hello@mail.com</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <!-- Футер -->
@@ -501,5 +651,45 @@
         <p class="footer__copyright">студия дизайна интерьера Метрика — 2023</p>
       </div>
     </footer> -->
+
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <nav class="footer-nav-menu">
+            <ul class="footer-nav-menu__list">
+              <li class="footer-nav-menu__item">
+                <a class="footer-nav-menu__link" href="#about-identifier"
+                  >О НАС</a
+                >
+              </li>
+              <li
+                class="footer-nav-menu__item"
+              >
+                <a class="footer-nav-menu__link" href="#projects-identifier"
+                  >ПРОЕКТЫ</a
+                >
+              </li>
+              <li
+                class="footer-nav-menu__item"
+              >
+                <a class="footer-nav-menu__link" href="#services-identifier"
+                  >УСЛУГИ</a
+                >
+              </li>
+              <li class="footer-nav-menu__item">
+                <a class="footer-nav-menu__link" href="#contacts-identifier"
+                  >КОНТАКТЫ</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <p class="footer__copyright">
+            студия дизайна интерьера Метрика — 2023
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="script/gallery.js"></script>
   </body>
 </html>

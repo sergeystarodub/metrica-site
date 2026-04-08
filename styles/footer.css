@@ -1,4 +1,4 @@
-.footer {
+/* .footer {
   padding-top: 60px;
   padding-bottom: 30px;
   min-width: 1180px;
@@ -6,25 +6,23 @@
 }
 
 .footer-nav-menu {
-  /* то что закоментил использовал когда выравнивал по центру */
-  /* это свойство не нужно иначе не спозиционируется по центру-если делать по центру закоментить - закоментил */
-  /* display: inline-block; */
-  /* сделал по центру padding-left закоментил */
-  /* после pixel perfect position: relative*/
+  то что закоментил использовал когда выравнивал по центру
+  это свойство не нужно иначе не спозиционируется по центру-если делать по центру закоментить - закоментил
+  display: inline-block;
+  сделал по центру padding-left закоментил
+  после pixel perfect position: relative
   position: relative;
   left: -4px;
   margin: 0 auto;
   margin-bottom: 87px;
   width: 450px;
-  /* после pixel perfect padding-left */
-  /* padding-left: 345px; */
-  /* задал примерно сам по макету отличаются - чтобы просмотреть надо на это время прописать display: inline-block; */
-  /* width: 456px; */
+  после pixel perfect padding-left
+  задал примерно сам по макету отличаются - чтобы просмотреть надо на это время прописать display: inline-block;
 }
 
 .footer-nav-menu__item {
   display: inline-block;
-  /* после pixel perfect margin-right: 51px */
+  после pixel perfect margin-right: 51px
   margin-right: 51px;
 }
 
@@ -38,11 +36,11 @@
   color: #ffffff;
 }
 
-/* после pixel perfect */
+после pixel perfect
 .footer-nav-menu__item-shiftproject {
   margin-right: 54px;
 }
-/* после pixel perfect */
+после pixel perfect
 .footer-nav-menu__item-shiftservices {
   margin-right: 53px;
 }
@@ -56,16 +54,90 @@
 }
 
 .footer__copyright {
-  /* то что закоментил-когда выравнивал по центру */
-  /* сделал по центру padding-left закоментил */
-  /* после pixel perfect position: relative*/
+  то что закоментил-когда выравнивал по центру
+  сделал по центру padding-left закоментил
+  после pixel perfect position: relative
   position: relative;
   left: 3px;
   text-align: center;
-  /* после pixel perfect padding-left */
-  /* padding-left: 384px; */
+  после pixel perfect padding-left
   font-size: 20px;
   line-height: 27px;
   color: #ffffff;
   opacity: 0.5;
+}
+ */
+
+.footer {
+  padding: 60px 0 30px;
+  background-color: #121212;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 87px;
+}
+
+.footer-nav-menu {
+  width: 450px;
+  /* border: 1px solid red; */
+}
+
+.footer-nav-menu__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav-menu__link {
+  display: block;
+  /* пока закоментил вроде есть line-height */
+  /* height: 25px; */
+  line-height: 25px;
+  /* text-align: center; */
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  /* border: 1px solid red; */
+}
+
+.footer-nav-menu__link:hover {
+  opacity: 0.5;
+}
+
+.footer__copyright {
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 30px 0 26px;
+  }
+
+  .footer-inner {
+    row-gap: 41px;
+  }
+
+  .footer-nav-menu {
+    width: 281px;
+    /* border: 1px solid red; */
+  }
+
+  .footer-nav-menu__link {
+    font-size: 12px;
+    line-height: 16px;
+    /* border: 1px solid red; */
+  }
+
+  .footer__copyright {
+    font-size: 13px;
+    line-height: 18px;
+  }
 }

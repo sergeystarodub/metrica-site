@@ -1,4 +1,4 @@
-.contacts {
+/* .contacts {
   padding: 186px 0 160px;
 }
 
@@ -12,7 +12,7 @@
 .contacts__title-wrapper {
   position: relative;
   margin-bottom: 32px;
-  /* добавил после pixel perfect */
+  добавил после pixel perfect
   display: inline-block;
   left: -1px;
 }
@@ -21,10 +21,10 @@
   content: "";
   display: block;
   position: absolute;
-  /* bottom: 37px - высчитал как 25(высота "Контакты") + 12 смещение вверх до значка от "контакты"  */
+  bottom: 37px - высчитал как 25(высота "Контакты") + 12 смещение вверх до значка от "контакты" 
   bottom: 37px;
-  /* скорректировал после pixel perfect сделал -4 так как -1 сделал в contacts__title-wrapper в итоге -5*/
-  /* left: -5px; */
+  скорректировал после pixel perfect сделал -4 так как -1 сделал в contacts__title-wrapper в итоге -5
+  
   left: -4px;
   width: 24px;
   height: 24px;
@@ -32,7 +32,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .contacts__telephone,
@@ -47,16 +47,11 @@
   margin-bottom: 30px;
 }
 
-/* .contacts__email {
-  font-size: 60px;
-  line-height: 60px;
-  text-decoration: none;
-  color: #121212;
-} */
+
 
 .contacts__email-wrapper {
   position: relative;
-  /* чтобы hover работал только по этой ширине а не на всю ширину div */
+  чтобы hover работал только по этой ширине а не на всю ширину div
   width: 412px;
 }
 
@@ -67,7 +62,7 @@
   bottom: -10px;
   left: 3px;
   width: 406px;
-  /* задал высоту чтобы было видно-2px взял из свойства border: 2px solid #121212 */
+  задал высоту чтобы было видно-2px взял из свойства border: 2px solid #121212
   height: 2px;
   background-color: #121212;
 }
@@ -75,4 +70,221 @@
 .contacts__telephone:hover,
 .contacts__email-wrapper:hover {
   opacity: 0.5;
+} */
+
+.contacts {
+  padding: 150px 0 150px;
+  color: #121212;
+}
+
+.contacts-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* вместо column-gap: 104px - подобрал при pixel perfect */
+  column-gap: 54px;
+}
+
+.contacts-item {
+  width: calc(50% - 52px);
+}
+
+.contacts__title {
+  margin-bottom: 64px;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.contacts-item__telephone-wrapper {
+  position: relative;
+  padding-top: 10px;
+  /* чтобы hover работал только по этой ширине а не на всю ширину div */
+  /* width: 472px уже не надо так не верно - чтобы не привязываться к фиксированным значениям */
+  /* width: 472px; */
+  display: inline-block;
+}
+
+.contacts-item__email-wrapper {
+  position: relative;
+  /* чтобы hover работал только по этой ширине а не на всю ширину div */
+  /* width: 412px уже не надо так не верно - чтобы не привязываться к фиксированным значениям */
+  /* width: 412px; */
+  display: inline-block;
+}
+
+.contacts-item__telephone-wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 86px;
+  left: -6px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../resources/contacts-icons/contacts-icons-phone_desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.contacts-item__email-wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 75px;
+  left: -1px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../resources/contacts-icons/contacts-icons-email_desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* пока закоментил - было раньше - переделал - использовал ссылки смотри ниже */
+/* .contacts-item__email-wrapper:hover::after,
+.contacts-item__telephone-wrapper:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 4px;
+  width: 100%;
+  задал высоту чтобы было видно-2px взял из свойства border: 2px solid #121212
+  height: 2px;
+  background-color: #121212;
+} */
+
+/* повесил подчеркивание не на wrapper как было, а на ссылку, чтобы иконки не туснели из-за opacity */
+.contacts-item__email:hover::after,
+.contacts-item__telephone:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 4px;
+  width: 100%;
+  /* задал высоту чтобы было видно-2px взял из свойства border: 2px solid #121212 */
+  height: 2px;
+  background-color: #121212;
+}
+
+.contacts-item__telephone,
+.contacts-item__email {
+  font-size: 60px;
+  line-height: 60px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* пробую - спросить у gpt как сделать чтобы при наведении все тускнели кроме иконки */
+/* делал так ранее-переделал сейчас уже не нужно */
+/* .contacts-item__telephone-wrapper:hover,
+.contacts-item__email-wrapper:hover {
+  opacity: 0.5;
+} */
+
+/* чтобы не тускнела иконка */
+.contacts-item__telephone:hover,
+.contacts-item__email:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 1199px) {
+  .contacts {
+    padding: 120px 0 120px;
+  }
+
+  .contacts-list {
+    /* вместо column-gap: 114px - подобрал при pixel perfect */
+    column-gap: 63px;
+  }
+
+  .contacts-item {
+    width: calc(50% - 57px);
+  }
+
+  .contacts-item__telephone-wrapper {
+    /* после pixel perfect */
+    padding-left: 2px;
+    /* чтобы номер телефона не переносился частично на новую строку иначе едет иконка телефона*/
+    white-space: nowrap;
+  }
+
+  .contacts-item__telephone-wrapper::before {
+    /* после pixel pefect */
+    bottom: 87px;
+    left: -4px;
+  }
+
+  .contacts-item__email-wrapper::before {
+    /* после pixel pefect */
+    bottom: 76px;
+    left: 0;
+  }
+
+  .contacts-item__email:hover::after,
+  .contacts-item__telephone:hover::after {
+    bottom: 1px;
+    left: 4px;
+  }
+
+  .contacts-item__telephone,
+  .contacts-item__email {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts {
+    padding: 80px 0 80px;
+  }
+
+  .contacts-list {
+    row-gap: 58px;
+  }
+
+  .contacts-item {
+    width: 100%;
+  }
+
+  .contacts__title {
+    margin-bottom: 58px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .contacts-item__telephone-wrapper {
+    padding-top: 0;
+    padding-left: 0;
+    /* после pixel perfect */
+    margin-left: -2px;
+  }
+
+  .contacts-item__email-wrapper {
+    /* после pixel perfect */
+    margin-left: -2px;
+  }
+
+  .contacts-item__telephone-wrapper::before {
+    bottom: 67px;
+    left: -2px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../resources/contacts-icons/contacts-icons-phone_mobile.png");
+  }
+
+  .contacts-item__email-wrapper::before {
+    bottom: 67px;
+    left: 1px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../resources/contacts-icons/contacts-icons-email_mobile.png");
+  }
+
+  .contacts-item__telephone,
+  .contacts-item__email {
+    font-size: 35px;
+    line-height: 46px;
+  }
 }
