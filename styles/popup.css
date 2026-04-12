@@ -33,7 +33,9 @@
 
 .popup__title {
   /* после pixel perfect */
-  padding-left: 21px;
+  /* padding-left: 21px; */
+  /* без полосы прокрутки падинг - предыдущий был под нее подогнан */
+  padding-left: 6px;
   margin-bottom: 4px;
   font-size: 45px;
   line-height: 61px;
@@ -41,7 +43,9 @@
 
 .popup__desc {
   /* после pixel perfect */
-  padding-left: 31px;
+  /* padding-left: 31px; */
+  /* без полосы прокрутки падинг - предыдущий был под нее подогнан */
+  padding-left: 15px;
   font-size: 18px;
   line-height: 25px;
 }
@@ -67,4 +71,21 @@
   background-color: #fff;
   color: #ad1818;
   border: 1px solid #ad1818;
+}
+
+.popup__close-btn {
+  position: absolute;
+  top: 32px;
+  right: 34px;
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: none;
+  background-image: url("../resources/popup-image/close-button-icons_desktop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  /* чтобы кнопка закрытия на телефоне не подсвечивались синим при нажатии */
+  -webkit-tap-highlight-color: transparent;
 }
