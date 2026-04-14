@@ -93,3 +93,42 @@
   /* чтобы кнопка закрытия на телефоне не подсвечивались синим при нажатии */
   -webkit-tap-highlight-color: transparent;
 }
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 767px) {
+  .popup {
+    padding: 7px;
+  }
+
+  .popup__content {
+    padding: 80px 16px;
+    width: 361px;
+  }
+
+  .popup__title {
+    margin-bottom: 11px;
+    padding-left: 0;
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+  .popup__desc {
+    padding-left: 0;
+    /* чтобы был перенос текста на следующую строку */
+    max-width: 209px;
+    /* чтобы встал по центру - inline-block */
+    display: inline-block;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .popup__close-btn {
+    top: 40px;
+    right: 29px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../resources/popup-image/close-button-icons_mobile.png");
+  }
+}
