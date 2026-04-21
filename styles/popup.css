@@ -50,8 +50,40 @@
   /* padding-left: 31px; */
   /* без полосы прокрутки падинг - предыдущий был под нее подогнан */
   padding-left: 15px;
+  margin-bottom: 60px;
   font-size: 18px;
   line-height: 25px;
+}
+
+.popup__input {
+  display: block;
+  margin-bottom: 50px;
+  width: 100%;
+  font-size: 25px;
+  line-height: 34px;
+  padding-left: 0;
+  border: none;
+  border-bottom: 1px solid #000;
+  opacity: 0.5;
+}
+
+.popup__input:last-child {
+  margin-bottom: 0;
+}
+
+.popup__input:focus {
+  outline: none;
+}
+
+.popup__input::placeholder {
+  color: #000;
+  /* opacity: 0.5; */
+  
+}
+
+.popup__form {
+  margin-bottom: 80px;
+  padding-right: 5px;
 }
 
 .popup__send-btn {
