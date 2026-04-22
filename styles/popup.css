@@ -58,13 +58,15 @@
 .popup__input {
   display: block;
   margin-bottom: 50px;
+  padding-bottom: 8px;
   width: 100%;
+  font-family: "Manrope", sans-serif;
   font-size: 25px;
   line-height: 34px;
   padding-left: 0;
   border: none;
   border-bottom: 1px solid #000;
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 
 .popup__input:last-child {
@@ -77,7 +79,7 @@
 
 .popup__input::placeholder {
   color: #000;
-  /* opacity: 0.5; */
+  opacity: 0.5;
   
 }
 
