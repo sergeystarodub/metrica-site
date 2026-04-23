@@ -17,6 +17,8 @@
   visibility: hidden;
   transition: all 0.3s ease;
   color: #000;
+  /* чтобы через popup-кнопку не просвечивала надпись галерея */
+  z-index: 100;
 }
 
 .popup_open {
