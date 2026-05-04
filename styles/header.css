@@ -101,6 +101,14 @@
   visibility: visible;
 }
 
+.burger__content {
+  width: 80%;
+  height: 100%;
+  background-color: #fff;
+  /* справа 10px задал сам - может потом скорректировать */
+  padding: 80px 10px 65px 30px;
+}
+
 @media (max-width: 1199px) {
   .header {
     margin-bottom: 73px;
@@ -131,6 +139,26 @@
 
   .burger-btn__line_short {
     width: 31px;
+  }
+
+  .burger-btn_open {
+    /* подобрал на глаз top */
+    top: 15px;
+    gap: 0;
+  }
+
+  /* чтобы подровнять кнопку-крестик */
+  .burger-btn_open .burger-btn__line {
+    margin-bottom: -2px;
+  }
+
+  .burger-btn_open .burger-btn__line:nth-child(1) {
+    transform: rotate(-45deg);
+  }
+
+  .burger-btn_open .burger-btn__line:nth-child(2) {
+    width: 100%;
+    transform: rotate(45deg);
   }
 }
 
