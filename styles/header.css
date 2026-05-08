@@ -277,4 +277,35 @@
 }
 
 @media (max-width: 767px) {
+  .header {
+    margin-bottom: 61px;
+    padding-top: 31px;
+  }
+
+  .header__logo {
+    width: 96px;
+    height: 16px;
+  }
+
+  .burger-btn {
+    right: 0;
+    top: 4px;
+    gap: 3px;
+    width: 38px;
+    /* высчитывается как 1.52px+1.52px+3px */
+    height: 6px;
+  }
+
+  .burger-btn__line {
+    border: 0.8px solid #000;
+  }
+
+  .burger-btn__line_short {
+    width: 24px;
+  }
+
+  .burger-btn_open {
+    /* подобрал на глаз top */
+    top: 15px;
+  }
 }
