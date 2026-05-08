@@ -305,7 +305,20 @@
   }
 
   .burger-btn_open {
-    /* подобрал на глаз top */
-    top: 15px;
+    width: 26px;
+    top: 4px;
+    right: 11px;
+  }
+
+  .burger-btn_open .burger-btn__line {
+    margin-bottom: -4px;
+  }
+
+  .burger-btn_open .burger-btn__line:nth-child(1) {
+    width: 26px;
+  }
+
+  .burger-btn_open .burger-btn__line:nth-child(2) {
+    width: 26px;
   }
 }
