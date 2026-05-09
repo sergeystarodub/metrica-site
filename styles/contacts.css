@@ -175,6 +175,8 @@
   line-height: 60px;
   text-decoration: none;
   color: inherit;
+  /* чтобы при нажатии на планшете и телефоне не подсвечивалось синим */
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* пробую - спросить у gpt как сделать чтобы при наведении все тускнели кроме иконки */

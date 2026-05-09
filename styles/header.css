@@ -26,6 +26,8 @@
   display: inline-block;
   width: 100%;
   height: 100%;
+  /* чтобы при нажатии на планшете и телефоне не подсвечивалось синим */
+  -webkit-tap-highlight-color: transparent;
 }
 
 .header__logo-image {
@@ -53,6 +55,8 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #121212;
+  /* чтобы при нажатии на планшете и телефоне не подсвечивалось синим */
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* если в 3 чекпоинте сделаю nav-menu через ul li список возможно применять after к li - применяется к <a>*/
@@ -133,6 +137,8 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #000;
+  /* чтобы при нажатии на планшете и телефоне не подсвечивалось синим */
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* чтобы корректно отбражался отступ а вместе и были подгружены свойства */
@@ -147,6 +153,8 @@
   display: inline-block;
   width: 100%;
   height: 100%;
+  /* чтобы при нажатии на планшете и телефоне не подсвечивалось синим */
+  -webkit-tap-highlight-color: transparent;
 }
 
 .burger__logo-image {
@@ -182,6 +190,8 @@
   line-height: 25px;
   text-decoration: none;
   color: #121212;
+  /* чтобы при нажатии на планшете и телефоне не подсвечивалось синим */
+  -webkit-tap-highlight-color: transparent;
 }
 
 @media (max-width: 1199px) {

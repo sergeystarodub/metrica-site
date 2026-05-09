@@ -52,6 +52,8 @@
   line-height: 27px;
   text-decoration: none;
   color: #ad1818;
+  /* чтобы при нажатии на планшете и телефоне не подсвечивалось синим */
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* после pixel perfect */
