@@ -118,6 +118,17 @@
   padding: 80px 10px 65px 30px;
 }
 
+/* сделал выезжающее меню */
+.burger__content {
+  position: fixed;
+  right: -100%;
+  transition: all 0.6s ease;
+}
+
+.burger_open .burger__content {
+  right: 0;
+}
+
 /* разместил здесь а не в media чтобы при расширении экрана стили burger-nav-menu не исчезали на десктопе при открытом бургере - такое возможно только делать в браузере физически наверное нет*/
 .burger-nav-menu {
   margin-bottom: 90px;
