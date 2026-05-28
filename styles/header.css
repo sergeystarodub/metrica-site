@@ -214,7 +214,9 @@
     display: none;
   }
 
-  .burger-btn {
+  /* первый вариант кнопки-пока закоментил-делаю сейчас через тег button и псевдоэлементы */
+
+  /* .burger-btn {
     position: absolute;
     right: 0;
     top: -5px;
@@ -224,36 +226,91 @@
     align-items: flex-end;
     gap: 4px;
     width: 50px;
-    /* высчитывается как 2px+2px+4px */
+    высчитывается как 2px+2px+4px
     height: 8px;
-  }
+  } */
 
-  .burger-btn__line {
+  /* .burger-btn__line {
     width: 100%;
     border: 1px solid #000;
     transition: all 0.5s ease;
+  } */
+
+  /* .burger-btn__line_short {
+    width: 31px;
+  } */
+
+  /* .burger-btn_open {
+    подобрал на глаз top
+    top: 15px;
+    gap: 0;
+  } */
+
+  /* чтобы подровнять кнопку-крестик */
+  /* .burger-btn_open .burger-btn__line {
+    margin-bottom: -2px;
+  } */
+
+  /* .burger-btn_open .burger-btn__line:nth-child(1) {
+    transform: rotate(-45deg);
+  } */
+
+  /* .burger-btn_open .burger-btn__line:nth-child(2) {
+    width: 100%;
+    transform: rotate(45deg);
+  } */
+
+  /* второй вариант кнопки-бургера - делаю через тег button и псевдоэлементы */
+  .burger-btn {
+    display: block;
+    width: 50px;
+    /* высчитывается как 2px+2px+6px */
+    height: 10px;
+    position: relative;
+    right: 0;
+    top: -11px;
+    z-index: 170;
+    background: none;
+    border: none;
   }
 
-  .burger-btn__line_short {
+  .burger-btn::before,
+  .burger-btn::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    /* здесь нужен transition чтобы кнопка-бургерпереходила в кнопку-крестик и обратно плавно */
+    transition: all 0.5s ease;
+  }
+
+  .burger-btn::after {
+    top: 6px;
     width: 31px;
   }
 
   .burger-btn_open {
     /* подобрал на глаз top */
     top: 15px;
-    gap: 0;
+    
   }
 
-  /* чтобы подровнять кнопку-крестик */
-  .burger-btn_open .burger-btn__line {
-    margin-bottom: -2px;
+  .burger-btn_open::before,
+  .burger-btn_open::after {
+    /* top чтобы выровнять крестик */
+    top: 2px;
+    /* здесь уже не нужно задано выше */
+    /* transition: transform 0.5s ease; */
   }
 
-  .burger-btn_open .burger-btn__line:nth-child(1) {
+  .burger-btn_open::before {
     transform: rotate(-45deg);
   }
 
-  .burger-btn_open .burger-btn__line:nth-child(2) {
+  .burger-btn_open::after {
     width: 100%;
     transform: rotate(45deg);
   }
