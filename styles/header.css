@@ -295,7 +295,6 @@
   .burger-btn_open {
     /* подобрал на глаз top */
     top: 15px;
-    
   }
 
   .burger-btn_open::before,
@@ -364,13 +363,13 @@
     width: 96px;
     height: 16px;
   }
-
-  .burger-btn {
+  /* первый вариант кнопки-бургера-сейчас переделываю через тег button и псевдоэлементы */
+  /* .burger-btn {
     right: 0;
     top: 4px;
     gap: 3px;
     width: 38px;
-    /* высчитывается как 1.52px+1.52px+3px */
+    высчитывается как 1.52px+1.52px+3px
     height: 6px;
   }
 
@@ -397,6 +396,38 @@
   }
 
   .burger-btn_open .burger-btn__line:nth-child(2) {
+    width: 26px;
+  } */
+
+  /* второй вариант кнопки - через тег button */
+  .burger-btn {
+    right: 0;
+    top: 0;
+    width: 38px;
+    /* высчитывается как 1.52px+1.52px+5px */
+    height: 8px;
+  }
+
+  .burger-btn::before,
+  .burger-btn::after {
+    height: 1.52px;
+  }
+
+  .burger-btn::after {
+    top: 5px;
+    width: 24px;
+  }
+
+  .burger-btn_open {
+    width: 26px;
+    top: 0;
+    right: 12px;
+  }
+
+  .burger-btn_open::before,
+  .burger-btn_open::after {
+    /* top чтобы выровнять крестик */
+    top: 2px;
     width: 26px;
   }
 }
