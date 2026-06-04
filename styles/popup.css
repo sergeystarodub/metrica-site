@@ -38,6 +38,23 @@
   text-align: center;
 }
 
+.popup__close-btn {
+  position: absolute;
+  top: 32px;
+  right: 34px;
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: none;
+  background-image: url("../resources/popup-image/close-button-icons_desktop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  /* чтобы кнопка закрытия на телефоне не подсвечивались синим при нажатии */
+  -webkit-tap-highlight-color: transparent;
+}
+
 .popup__title {
   /* после pixel perfect */
   /* padding-left: 21px; */
@@ -56,6 +73,11 @@
   margin-bottom: 60px;
   font-size: 18px;
   line-height: 25px;
+}
+
+.popup__form {
+  margin-bottom: 80px;
+  padding-right: 5px;
 }
 
 .popup__input {
@@ -85,11 +107,6 @@
   opacity: 0.5;
 }
 
-.popup__form {
-  margin-bottom: 80px;
-  padding-right: 5px;
-}
-
 .popup__send-btn {
   display: block;
   width: 100%;
@@ -113,24 +130,11 @@
   border: 1px solid #ad1818;
 }
 
-.popup__close-btn {
-  position: absolute;
-  top: 32px;
-  right: 34px;
-  width: 50px;
-  height: 50px;
-  background: none;
-  border: none;
-  background-image: url("../resources/popup-image/close-button-icons_desktop.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  cursor: pointer;
-  /* чтобы кнопка закрытия на телефоне не подсвечивались синим при нажатии */
-  -webkit-tap-highlight-color: transparent;
-}
-
 @media (max-width: 1199px) {
+  .popup__close-btn {
+    right: 44px;
+  }
+
   .popup__title {
     /* после pixel perfect */
     padding-left: 12px;
@@ -139,10 +143,6 @@
   .popup__desc {
     /* после pixel perfect */
     padding-left: 20px;
-  }
-
-  .popup__close-btn {
-    right: 44px;
   }
 }
 
@@ -155,6 +155,16 @@
     padding: 80px 16px;
     /* закоментил - чтобы был на всю ширину экрана */
     /* width: 361px; */
+  }
+
+  .popup__close-btn {
+    top: 40px;
+    /* right: 29px; */
+    /* после pixel perfect */
+    right: 35px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../resources/popup-image/close-button-icons_mobile.png");
   }
 
   .popup__title {
@@ -175,24 +185,14 @@
     line-height: 19px;
   }
 
-  .popup__input {
-    margin-bottom: 40px;
-    font-size: 18px;
-    line-height: 25px;
-  }
-
   .popup__form {
     margin-bottom: 60px;
     padding-right: 8px;
   }
 
-  .popup__close-btn {
-    top: 40px;
-    /* right: 29px; */
-    /* после pixel perfect */
-    right: 35px;
-    width: 30px;
-    height: 30px;
-    background-image: url("../resources/popup-image/close-button-icons_mobile.png");
+  .popup__input {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 25px;
   }
 }
