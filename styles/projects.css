@@ -11,21 +11,28 @@
 }
 
 .projects-enumeration {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
   margin-bottom: 90px;
 }
 
-.project-item {
+/* закоментил так как сделал через флексбокс - смотри projects-enumeration */
+
+/* .project-item {
   margin-bottom: 90px;
 }
 
 .project-item:nth-last-child(1) {
   margin-bottom: 0;
-}
+} */
 
 /* еще один вариант обнуления отступа у последнего элемента в ul - есть пробел между : */
 /* .projects-enumeration :nth-last-child(1) {
   margin-bottom: 0;
 } */
+
+
 
 .project-item__image-wrapper {
   margin-bottom: 15px;
@@ -112,12 +119,14 @@
   }
 
   .projects-enumeration {
+    gap: 80px;
     margin-bottom: 100px;
   }
 
-  .project-item {
+  /* закоментил так как сделал через флексбокс - смотри projects-enumeration */
+  /* .project-item {
     margin-bottom: 80px;
-  }
+  } */
 
   .project-item__desc {
     margin-bottom: 10px;
@@ -138,12 +147,14 @@
   }
 
   .projects-enumeration {
+    gap: 49px;
     margin-bottom: 60px;
   }
 
-  .project-item {
+  /* закоментил так как сделал через флексбокс - смотри projects-enumeration */
+  /* .project-item {
     margin-bottom: 49px;
-  }
+  } */
 
   .project-item__image-wrapper {
     margin-bottom: 20px;
