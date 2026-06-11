@@ -57,6 +57,7 @@
   color: #121212;
   /* чтобы при нажатии на планшете и телефоне не подсвечивалось синим */
   -webkit-tap-highlight-color: transparent;
+  transition: opacity 0.2s ease;
 }
 
 /* если в 3 чекпоинте сделаю nav-menu через ul li список возможно применять after к li - применяется к <a>*/
