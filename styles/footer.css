@@ -102,6 +102,7 @@
   /* border: 1px solid red; */
   /* чтобы при нажатии на планшете и телефоне не подсвечивалось синим */
   -webkit-tap-highlight-color: transparent;
+  transition: opacity 0.2s ease;
 }
 
 .footer-nav-menu__link:hover {
